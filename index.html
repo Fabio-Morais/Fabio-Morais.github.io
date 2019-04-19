@@ -4,12 +4,20 @@
   <head>
 
     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Fábio Morais</title>
 
- 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
 
@@ -18,36 +26,171 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav id="mainNav">
-		<div class="container">
-			<a id="name" href="#page-top">Fábio Morais</a>
-			<div id="navbarOptions">
-			  <ul>
-				<li class="nav-item">
-				  <a id="about" href="#about">About</a>
-				</li> 
-				<li class="nav-item">
-					<a id="skills" href="#hardskills">Skills</a>
-				  </li>
-				<li class="nav-item">
-				  <a id="contact" href="#contact">Contact</a>
-				</li>
-			  </ul>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Fábio Morais</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+			<a class="nav-link js-scroll-trigger " href="#about"><i class="far fa-address-book"></i>About</a>
+			</li> 
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#hardskills">Skills</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <header class="introduction">
-        <div class="myPhoto">
-			<img src="https://media.licdn.com/dms/image/C5603AQF6mbjlZ28Z-Q/profile-displayphoto-shrink_200_200/0?e=1560988800&v=beta&t=Ba5FbA4qEPNPIVmSW0E0MxSdos85ubs3lrPl9Mhrn4w" alt="Smiley face" height="250" width="250" id="myface"> 
+    <header class="masthead text-justified text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <img src="https://media.licdn.com/dms/image/C5603AQF6mbjlZ28Z-Q/profile-displayphoto-shrink_200_200/0?e=1560988800&v=beta&t=Ba5FbA4qEPNPIVmSW0E0MxSdos85ubs3lrPl9Mhrn4w" class= "img-thumbnail" alt="Cinque Terre" height="250" width="250" id="myface"> 
+          </div>
+          <div class="col-md-6 mx-auto">
+            <p class="text-faded mb-5 text-justify">My name is Fábio Morais from Porto Portugal.<br>
+				I'm studying the Master's degree in Electrical and Computer Engineering, major area of Automation.  <br>
+                My main interest areas are computer networks, security and any related technologies <br>
+                I'm passionate about physics, horse riding and reading. Oh and I love learning foreign languages.  </p>
+			<button type="button" class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="collapse" data-target="#demoCollapse">Download CV</button>
+			<div id="demoCollapse" class="collapse">
+				If you want my CV please send me an email<br>
+				<a href="mailto:your-email@your-domain.com" id="emailCv"> fabiouds@hotmail.com</a>
+			</div>
+          </div>
         </div>
-        <div class="text">
-            <p id="text-faded mb-5 text-justify">My name is Fábio Morais from Porto Portugal.<br> I'm studying the Master's degree in Electrical and Computer Engineering, major area of Automation. <br></p>
-            <a id="btn" href="#about">Find Out More</a>
-        </div>
+      </div>
     </header>
 
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mx-auto text-left">
+            <h2 class="section-heading text-white text-justify">Education</h2>
+            <hr class="light my-4" style="margin-left:0">
+          </div>
+          <div class="col-8 mx-auto text-justify">
+		   <h4 class="section-heading text-white font-weight-bold text-justify">Sport Science</h4>
+            <p class="text-faded mb-4 font-weight-bold text-justify">Faculty of Sports of the University of Porto | Sept 2016 - 2017</p>
+			 <h4 class="section-heading text-white font-weight-bold text-justify">Electrical and Computer Engineering</h4>
+            <p class="text-faded mb-4 font-weight-bold text-justify">Superior Institute of Engineering of Porto | Sept 2016 - 2017</p>
+            <h4 class="section-heading text-white font-weight-bold text-justify">Electrical and Computer Engineering</h4>
+            <p class="text-faded mb-4 font-weight-bold text-justify">Faculty of Engineering of the University of Porto | Sept 2017 - 2021</p>
+          </div>
+        </div>
+          <div class="row">
+              <div class="col-4 mx-auto">
+                <h2 class="section-heading text-white text-justify">Courses</h2>
+                <hr class="light my-4" style="margin-left:0">
+              </div>
+              <div class="col-8 mx-auto">
+                <h4 class="section-heading text-white font-weight-bold text-justify">Python	para Android, iOS, Win, Linux e Mac</h4>
+                <p class="text-faded mb-4 font-weight-bold text-justify">Udemy | 2018</p>
+               <h4 class="section-heading text-white font-weight-bold text-justify">Python	para Android, iOS, Win, Linux e Mac</h4>
+                <p class="text-faded mb-4 font-weight-bold text-justify">Udemy | 2018</p>
+           
+			  </div>
+               
+          </div>
+          <div class="row">
+              <div class="col-4 mx-auto">
+                <h2 class="section-heading text-white text-justify">Languages</h2>
+                <hr class="light my-4" style="margin-left:0">
+              </div>
+              <div class="col-8 mx-auto">
+                <h4 class="section-heading text-white font-weight-bold text-justify">English | Portuguese</h4>
+              </div>
+          </div>
+      </div>
+    </section>
 
+
+    <section id="hardskills">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Skills</h2>
+              <hr class="my-4">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fas fa-4x fa-code text-primary mb-3 sr-icons"></i>
+                <h3 class="mb-3">Software</h3>
+                <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fas fa-4x fa-laptop-code text-primary mb-3 sr-icons"></i>
+                <h3 class="mb-3">WebDev</h3>
+                <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fab fa-4x fa-python text-primary mb-3 sr-icons"></i>
+                <h3 class="mb-3">Eletric Engineering</h3>
+                <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fas fa-4x fa-microchip text-primary mb-3 sr-icons"></i>
+                <h3 class="mb-3">Embedded Systems</h3>
+                <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section  class="bg-dark text-white" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Contact</h2>
+            <hr class="my-4">
+            <p class="mb-5">Ready to start your project with me? Send me an email!</p>
+          </div>
+        </div>
+          <div class="col-sm-12 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">fabiouds@hotmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Plugin JavaScript 
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+     Custom scripts for this template 
+    <script src="js/creative.min.js"></script> -->
 
   </body>
 

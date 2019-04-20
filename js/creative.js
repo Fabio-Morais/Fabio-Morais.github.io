@@ -1,5 +1,3 @@
-
-
 const pointer= document.getElementById('pointerGroup');
 let text= document.getElementById('pointerText');
 function changeColor(){

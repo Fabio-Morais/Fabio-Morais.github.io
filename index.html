@@ -26,29 +26,32 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Fábio Morais</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-			<a class="nav-link js-scroll-trigger " href="#about"><i class="far fa-address-book"></i>About</a>
-			</li> 
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#hardskills">Skills</a>
-            </li>
-			<li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light fixed-top " id="mainNav">
+		<a class="navbar-brand js-scroll-trigger "  id="photoText" href="#page-top">
+			<img src="./img/1.jpg" class="rounded-circle img-fluid" alt="Cinque Terre">
+			 Fábio Morais
+		</a>
+		<div class="container ">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				<a class="nav-link js-scroll-trigger " href="#about"><i class="fas fa-address-card " style="font-size:15px"></i> About</a>
+				</li> 
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#hardskills"><i class="fas fa-star " style="font-size:15px"></i> Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#projects"><i class="fas fa-robot " style="font-size:15px"></i> Projects</a>
+				 </li>
+				<li class="nav-item">
+				  <a class="nav-link js-scroll-trigger" href="#contact"><i class="fas fa-phone " style="font-size:15px"></i> Contact</a>
+				</li>
+			  </ul>
+			</div>
+		</div>
     </nav>
 
     <header class="masthead text-justified text-white d-flex">
@@ -162,7 +165,7 @@
                 <hr class="light my-4" style="margin-left:0">
             </div>
             <div class="col-8 mx-auto">
-				<h4 class="section-heading text-white font-weight-bold text-justify" align="left">English <div id= "bar" class="progress border" style="width:50%"><div id="myBar"class="progress-bar-animated progress-bar bg-info progress-bar-striped" style="width:50%"></div></div>
+				<h4 class="section-heading text-white font-weight-bold text-justify" align="left">English <div id= "bar" class="progress border" style="width:50%"><div id="myBar"class="progress-bar-animated progress-bar bg-info progress-bar-striped" style="width:65%"></div></div>
 				</h4>
 				<h4 class="section-heading text-white font-weight-bold text-justify ">Portuguese <div class="progress border" style="width:50%"><div class="progress-bar-animated progress-bar bg-info progress-bar-striped" style="width:100%"></div></div>
 				</h4>
@@ -184,11 +187,15 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
-              <div class="service-box mt-5 mx-auto">
-                <i class="fas fa-4x fa-code text-primary mb-3 sr-icons"></i>
-                <h3 class="mb-3">Software</h3>
-                <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-              </div>
+                <div class="service-box mt-5 mx-auto pointer" id="pointerGroup" data-toggle="collapse" data-target="#demo">
+					<i class="fas fa-4x fa-code text-primary mb-3 sr-icons" ></i>
+					<h3 class="mb-3" id="pointerText">Software</h3>
+                </div>
+			    <div id="demo" class="collapse">
+					<div id="myProgress">
+					  <div id="myBar"></div>
+					</div>
+				</div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
               <div class="service-box mt-5 mx-auto">
@@ -199,7 +206,7 @@
             </div>
             <div class="col-lg-3 col-md-6 text-center">
               <div class="service-box mt-5 mx-auto">
-                <i class="fab fa-4x fa-python text-primary mb-3 sr-icons"></i>
+                <i class="fas fa-4x fa-plug text-primary mb-3 sr-icons"></i>
                 <h3 class="mb-3">Eletric Engineering</h3>
                 <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
               </div>
@@ -248,7 +255,6 @@
 
      Custom scripts for this template 
      -->
-	<script src="./js/creative.min.js"></script>
 	<script src="./js/creative.js"></script>
   </body>
 

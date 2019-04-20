@@ -57,7 +57,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 8rem 0; /*espaço entre secçoes*/
 }
 
 .section-heading {
@@ -93,6 +93,18 @@ img::-moz-selection {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  height: auto;
+  max-width: 100%;
+  max-height: 50px;
+}
+.img-fluid{
+	max-width: 100%;
+	 max-width: 25px;
+	height: auto;
+	
+}
+#photoText:hover{
+	opacity:0.8;
 }
 
 #mainNav .navbar-brand {
@@ -142,7 +154,7 @@ img::-moz-selection {
     color: #4b4b4b;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -341,7 +353,20 @@ header.masthead p {
 }
 
 /**/
+.pointer {cursor: pointer;}
 
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+/****/
 /*****************************TIMELINE***********************/
 .main-timeline{
     overflow: hidden;

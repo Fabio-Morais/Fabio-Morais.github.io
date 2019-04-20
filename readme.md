@@ -5,3 +5,5 @@
 - [ ] Adicionar "outras skills"
 - [ ] Renovar foto
 - [ ] Adicionar projetos
+- [ ] Adicionar secção contactos
+- [ ] Adicionar rodapé

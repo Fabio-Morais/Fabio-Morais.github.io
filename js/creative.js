@@ -1,4 +1,4 @@
-const pointer= document.getElementById('pointerGroup');
+let pointer= document.getElementById('pointerGroup');
 let text= document.getElementById('pointerText');
 function changeColor(){
 	text.style.color= "grey";

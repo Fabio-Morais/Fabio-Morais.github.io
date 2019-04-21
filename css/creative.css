@@ -1,3 +1,8 @@
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('basis33.regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
 body,
 html {
   width: 100%;
@@ -48,12 +53,13 @@ h6 {
   background-color: #60a3bc !important;
 }
 
-.bg-dark {
+.bg-dark{
   background-color: #212529 !important;
 }
 
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
+.desc{
+	font-family: "Lucida Console";
+	font-size: 18px;
 }
 
 section {
@@ -362,6 +368,22 @@ header.masthead p {
   background-color: grey;
 }
 
+#bottom{
+	background-color: 4b4b4b !important;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#infoEnd{
+	float: right;
+
+}
+.icon{
+	padding-right:30px;
+}
+.icon:hover{
+	opacity:0.5;
+}
 
 /****/
 /*****************************TIMELINE***********************/

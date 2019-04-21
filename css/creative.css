@@ -62,6 +62,11 @@ h6 {
 	font-size: 18px;
 }
 
+.skills{
+	font-family: "Lucida Console";
+	text-align:left;
+	font-size: 15px;
+}
 section {
   padding: 8rem 0; /*espaço entre secçoes*/
 }
@@ -201,7 +206,7 @@ header.masthead {
 #contact{
 	padding-top: 10rem;
 	padding-bottom: calc(10rem - 56px);
-	background: url("../img/art-colorful-contemporary-2047905.jpg");
+	background: url("../img/artificial-flowers-blurred-background-close-up-1229861.jpg");
 	background-repeat: repeat;
 	background-position: center center;
 	background-size: cover; 
@@ -364,8 +369,8 @@ header.masthead p {
 /**/
 .pointer {cursor: pointer;}
 
-#myProgress {
-  background-color: grey;
+.progress {
+  float:left;
 }
 
 #bottom{

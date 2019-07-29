@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139199064-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139199064-1');
+</script>
+
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,6 +55,12 @@
   <style>
     #ulAbout {
     list-style-image: url('img/start2.PNG');
+    font-family:"Comic Sans MS",helvetica,arial,courier;
+    font-size: 18px;
+  }
+  #liAbout{
+    margin-top:10px;
+    
   }
   </style>
 </head>
@@ -116,7 +132,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Software Developer - Embedded Systems - Web Developer </p>
+      <p class="masthead-subheading font-weight-light mb-0">Software Developer - Embedded Systems - Eletrical Engineering</p>
 
     </div>
   </header>
@@ -143,21 +159,21 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-5 ml-auto">
-          <ul style="list-style-type:square;" id="ulAbout">
-            <li class="lead">My name is Fábio Morais and I'm from Porto, Portugal.</li>
+          <ul style="list-style-type:square; " id="ulAbout">
+            <li >My name is Fábio Morais and I'm from Porto, Portugal.</li>
 
-            <li class="lead">I'm studying the Master's degree in Electrical and Computer Engineering in 4th year,
-              major area of Automation .</li>
+            <li   id="liAbout">I'm studying the Master's degree in Electrical and Computer Engineering in 4th year,
+              major area of Automation.</li>
 
-            <li class="lead">I'm a self-taught person, always trying to learn new things.</li>
+            <li  id="liAbout">I'm a self-taught and agile person, always trying to learn new things.</li>
           </ul>
         </div>
         <div class="col-lg-5 mr-auto">
-          <ul style="list-style-type:square;" id="ulAbout">
-            <li class="lead">My main interest areas are software engineering, embedded systems, programming model for
-              industrial controllers, scada and any related technologies .</li>
+          <ul style="list-style-type:square;" id="ulAbout" >
+            <li >My main interest areas are software engineering, embedded systems, web developer, programming model for
+              industrial controllers, scada and any related technologies.</li>
 
-            <li class="lead">Passionate about technology, automative industry, robotics and programming. </li>
+            <li id="liAbout">Passionate about technology, automative industry, robotics and programming.</li>
           </ul>
         </div>
       </div>
@@ -697,32 +713,31 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
+  
+
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white " id="contact">
+    <div class="container  text-white">
 
       <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <h2 class="page-section-heading  text-white text-uppercase ">Contact Me</h2>
 
       <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
+      <div class="divider-custom  divider-light">
+        <div class="divider-custom-line "></div>
+        <div class="divider-custom-icon ">
           <i class="fas fa-phone"></i>
         </div>
         <div class="divider-custom-line"></div>
       </div>
 
-      
-
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="footer text-center" id="contact">
-    <div class="container">
-      <div class="row justify-content-around align-items-strech">
+      <h2  style="text-align: center;"></h2>
+     <a href="mailto:fabio-morais@outlook.pt"> <button class="btn btn-primary" href="mailto:fabio-morais@outlook.pt" data-dismiss="modal"  id="buttonEmail">
+        
+        Send me an email <i class="fas fa-envelope-open-text" title="Email" > </i>
+      </button></a>
+      <div class="row justify-content-around align-items-strech " id="foot">
 
         <!-- Footer Location -->
         <div class="col-sm-4 col-lg-6">
@@ -748,10 +763,10 @@
             target="_blank">
             <i class="fab fa-fw fa-linkedin-in" title="Linkedin"></i>
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="mailto:fabio-morais@outlook.pt" id="emailCv"
+          <!--<a class="btn btn-outline-light btn-social mx-1" href="mailto:fabio-morais@outlook.pt" id="emailCv"
             style="font-size:1.5rem">
             <i class="fas fa-envelope-open-text" title="Email"></i>
-          </a>
+          </a>-->
         </div>
 
         <!-- Footer About Text -->
@@ -941,12 +956,12 @@
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Text -->
                 <div>
-                  <p id="language"><b>Language:</b> IEC 61131-3 and winlog for SCADA </p>
+                  <p id="language"><b>Language:</b> IEC 61131-3 and winlog for SCADA. </p>
                   <p id="textNormal"><b>Program:</b> Unity Pro Xl, schneider PLC M340</p>
                   <p id="textNormal"><b>Summary:</b></p>
                   <ul id="textNormal">
-                    <li>A full automatic production line with Scada to monitorize the production</li>
-                    <li>All products have a bar code, each bar code have a different type of production</li>
+                    <li>A full automatic production line with Scada to monitorize the production.</li>
+                    <li>All products have a bar code, each bar code have a different type of production.</li>
                   </ul>
                   <p><i>For more info please check on Github</i></p>
                 </div>
@@ -1005,7 +1020,7 @@
                     <li><b>Server/cloudlayer:</b> A relational database for persistent storage of information. The RDBMS
                       to be used is the PostgreSQL</li>
                     <li><b>Application layer:</b> A web interface, to present the information in a tabular and graphical
-                      form, whenaccepting SQL commands of an end user. The preferred languages to be used are HTML, CSS
+                      form, when accepting SQL commands of an end user. The preferred languages to be used are HTML, CSS
                       and PHP for the web interface</li>
                   </ol>
                   <p>Web interface- <a href="https://paginas.fe.up.pt/~up201504257/sinf/"
@@ -1078,11 +1093,11 @@
                   <p id="language"><b>Material:</b> ESP8266</p>
                   <p id="textNormal"><b>Summary:</b></p>
                   <ul id="textNormal">
-                    <li>The Smart Controller is a device that control the lights and the fan in our house</li>
-                    <li>This device is connected via wi-fi and show the weather forecast.</li>
-                    <li>The Smart Controller have a APP, with this APP we can turn on/off the light/fan, change the city
+                    <li>The Smart Controller is a device that controls the lights and the fan in our house</li>
+                    <li>This device is connected via wi-fi and shows the weather forecast.</li>
+                    <li>The Smart Controller has an APP, with this APP we can turn on/off the light/fan, change the city
                       and put differents users.</li>
-                    <li>Each user have a different city and different "ideal temperature".</li>
+                    <li>Each user has a different city and different "ideal temperature".</li>
                     <li>At nigth the ligths turn off, when the temperature is above the "ideal temperature" the fan
                       turns on.</li>
                   </ul>
@@ -1138,7 +1153,7 @@
                   <p id="textNormal"><b>Summary:</b></p>
                   <ul id="textNormal">
                     <li>I developed this website in my summer vacation for fun and to improve my knowledge about Web
-                      Development, I learned all this things in my course at CodeCademy.</li>
+                      Development, I have learned all this things in my course at CodeCademy.</li>
                   </ul>
                   <p><i>For more info please check on Github</i></p>
                 </div>
@@ -1201,7 +1216,7 @@
                   <ul id="textNormal">
                     <li>The main goal was to project and implement a weight measurement system based on FSR (Force
                       Sensing Resistor) technology. </li>
-                    <li>For that, we would have to develop an electronic circuit for signal conditioning and a virtual
+                    <li>For that, we had to develop an electronic circuit for signal conditioning and a virtual
                       instrument to acquire the signals from a data acquisition board. </li>
                     <li>Afterwards we characterized both static and dynamic behavior of the FSR sensors to calibrate
                       them and to have a reliable representation of the applied pressure.</li>
@@ -1309,11 +1324,11 @@
                   <p id="textNormal"><b>Summary:</b></p>
                   <ul id="textNormal">
                     <li>A quiz Game that I developed for fun and to improve my knowledge about data structures.</li>
-                    <li>This game have a login/register system, this system was developed with a hash table to search
+                    <li>This game has a login/register system, this system was developed with a hash table to search
                       for a valid login.</li>
                     <li>In this game we can add or edit the questions with a text file.</li>
                     <li>At the end we can view the questions that we fail.</li>
-                    <li>Have a top 10 players at the end.</li>
+                    <li>Has a top 10 players at the end.</li>
                   </ul>
                   <p><i>For more info please check on Github</i></p>
                 </div>

@@ -54,8 +54,8 @@
 	</div>
 
 	<main class="main">
-		<div class="container gutter-top" style="border:solid red!important;">
-			<div class="row sticky-parent" >
+		<div class="container gutter-top">
+			<div class="row sticky-parent">
 				<!-- Sidebar -->
 				<aside class="col-12 col-md-12 col-xl-3">
 					<div class="sidebar box shadow pb-0 sticky-column">
@@ -68,7 +68,7 @@
 						<div class="text-center">
 							<h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Fábio</span>
 								Morais</h3>
-							<div class="badge badge--light">Software Developer</div>
+							<div class="badge badge--light">Software Engineer</div>
 
 							<ul class="contacts-block">
 								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
@@ -89,11 +89,11 @@
 
 							<!-- Social -->
 							<div class="social d-flex flex-wrap justify-content-center">
-								<a class="social__link m-2" href="https://github.com/Fabio-Morais" target="_blank" data-toggle="tooltip" data-placement="top"
-								title="Github"><i
+								<a class="social__link m-2" href="https://github.com/Fabio-Morais" target="_blank"
+									data-toggle="tooltip" data-placement="top" title="Github"><i
 										class="fab fa-github"></i></a>
-								<a class="social__link m-2" href="https://www.linkedin.com/in/fabi0morais/" target="_blank" data-toggle="tooltip" data-placement="top"
-								title="Linkedin"><i
+								<a class="social__link m-2" href="https://www.linkedin.com/in/fabi0morais/"
+									target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
 										class="fab fa-linkedin-in"></i></a>
 							</div>
 						</div>
@@ -103,30 +103,54 @@
 							<!-- MENU HERE-->
 							<nav class="nav-menu" id="top-menu">
 								<ul>
-									<li class="contacts-block__item active"><a href="#about"><i
-												class="bx bx-home"></i>About</a></li>
-									<li class="contacts-block__item"><a href="#resume"><i class="bx bx-user"></i>
+									<li class="contacts-block__item active">
+										<a href="#about"><i class="far fa-user icon_menu text-center"></i> About</a>
+									</li>
+									<li class="contacts-block__item"><a href="#resume">
+											<i class="far fa-file icon_menu text-center"></i>
 											Resume</a></li>
-									<li class="contacts-block__item"><a href="#skills"><i class="bx bx-user"></i>
+									<li class="contacts-block__item"><a href="#skills"><i
+												class="fas fa-code icon_menu text-center"></i>
 											Skills</a></li>
 									<li class="contacts-block__item"><a href="#projects"><i
-												class="bx bx-file-blank"></i>
-											<span>Projects</span></a></li>
-									<li class="contacts-block__item"><a href="#hobbies"><i
-												class="bx bx-book-content"></i> Hobbies</a></li>
+												class="fas fa-code-branch text-center"></i>
+											Projects</a></li>
+
 
 								</ul>
 							</nav><!-- .nav-menu -->
-							<a class="btn" href="resume.pdf" download><i class="font-icon icon-download"></i> Download CV</a>
+							<a class="btn" href="resume.pdf" download><i class="font-icon icon-download"></i> Download
+								CV</a>
 						</div>
+
 					</div>
 				</aside>
 
 				<!-- Content -->
 				<div class="col-12 col-md-12 col-xl-9">
-
+					<!-- MOBILE MENU -->
+					<div class="circle-menu">
+						<div class="hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="inner-menu js-menu js-tabs">
+						<ul class="nav">
+							<li class="nav__item">
+								<a href="#about" class="active"> About</a>
+							</li>
+							<li class="nav__item"><a href="#resume">
+									Resume</a></li>
+							<li class="nav__item"><a href="#skills">
+									Skills</a></li>
+							<li class="nav__item"><a href="#projects">Projects</a></li>
+						</ul>
+					</div>
 					<!-- about -->
-					<div class="box shadow pb-1" id="about">
+					<div class="box shadow pb-2" id="about">
+
 						<!-- About -->
 						<div class="pb-0 pb-sm-2">
 							<h1 class="title title--h1 first-title title__separate">About Me</h1>
@@ -143,12 +167,53 @@
 							</p>
 
 						</div>
+						<div class="">
+							<h2 class="title title--h3">Hobbies</h2>
+							<div class="swiper-container js-carousel-clients" data-aos="fade-in">
+								<div class="swiper-wrapper">
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_healthy_habit_bh5w.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Workout</h4>
+									</div>
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_Code_review_re_woeb.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Learning</h4>
+									</div>
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_barbecue_3x93.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Cooking</h4>
+									</div>
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_Savings_re_eq4w.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Reading about finance</h4>
+									</div>
 
 
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_home_cinema_l7yl.svg" alt="Logo" /></a>
+										<h4 class="title title--h5 text-center mt-3">Watching Netflix</h4>
+
+									</div>
+
+
+								</div>
+
+								<div class="swiper-pagination mt-4"></div>
+							</div>
+						</div>
 					</div>
 
 					<!-- Resume -->
-					<div class="box shadow pb-1 mt-4" id="resume">
+					<div class="box shadow pb-2 mt-4" id="resume">
 						<div class="pb-3">
 							<h1 class="title title--h1 first-title title__separate">Resume</h1>
 						</div>
@@ -157,7 +222,7 @@
 							<div class="d-flex flex-column justify-content-center">
 								<div class="p-2">
 									<h2 class="title title--h3"><img class="title-icon"
-											src="assets/icons/icon-education.svg" alt="" /> Education</h2>
+											src="assets/img/mortarboard (1).svg" alt="" /> Education</h2>
 									<div class="timeline">
 										<!-- Item -->
 										<article class="timeline__item" data-aos="fade-up">
@@ -178,7 +243,7 @@
 												Engineering, major area of Robotics</p>
 										</article>
 										<!-- Item -->
-										<article class="timeline__item" data-aos="fade-up" data-aos-delay="300">
+										<article class="timeline__item" data-aos="fade-up" data-aos-delay="100">
 											<div class="d-flex flex-row">
 												<img class="logo-exp" src="assets/img/education/isep.png" alt="" />
 												<div class="d-flex flex-column ml-2">
@@ -203,8 +268,8 @@
 							<!-- Experience -->
 							<div class="d-flex flex-column justify-content-center">
 								<div class="p-2">
-									<h2 class="title title--h3"><img class="title-icon"
-											src="assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+									<h2 class="title title--h3"><img class="title-icon" src="assets/img/suitcase.svg"
+											alt="" /> Experience</h2>
 									<div class="timeline">
 										<!-- FEUP -->
 										<article class="timeline__item" data-aos="fade-up">
@@ -316,11 +381,11 @@
 							<!-- COURSES -->
 							<div class="d-flex flex-column justify-content-center mt-4">
 								<div class="p-2">
-									<h2 class="title title--h3"><img class="title-icon" src="assets/icons/medal.svg"
+									<h2 class="title title--h3"><img class="title-icon" src="assets/img/medal (1).svg"
 											alt="" /> Online Courses</h2>
 									<div class="row justify-content-between pt-2">
 										<!-- Case Item -->
-										<div class="case-item box box__second">
+										<div class="case-item box box__second" data-aos="fade-in">
 											<img class="case-item__icon" src="assets/img/courses/coursera.png" alt="" />
 											<div>
 												<h3 class="title title--h5"><a href="" class="custom_link">Neural
@@ -333,7 +398,7 @@
 										</div>
 
 										<!-- Case Item -->
-										<div class="case-item box box__second">
+										<div class="case-item box box__second" data-aos="fade-in" data-aos-delay="100">
 											<img class="case-item__icon" src="assets/img/courses/coursera.png" alt="" />
 											<div>
 												<h3 class="title title--h5"><a href="" class="custom_link">Machine
@@ -348,7 +413,7 @@
 
 
 										<!-- Case Item -->
-										<div class="case-item box box__second">
+										<div class="case-item box box__second" data-aos="fade-in" data-aos-delay="200">
 											<img class="case-item__icon" src="assets/img/courses/google.png" alt="" />
 											<div>
 												<h3 class="title title--h5"><a href="" class="custom_link">Digital
@@ -361,7 +426,7 @@
 										</div>
 
 										<!-- Case Item -->
-										<div class="case-item box box__second">
+										<div class="case-item box box__second" data-aos="fade-in" data-aos-delay="300">
 											<img class="case-item__icon" src="assets/img/courses/udemy.png" alt="" />
 											<div>
 												<h3 class="title title--h5"><a href="" class="custom_link">The Complete
@@ -372,7 +437,7 @@
 											</div>
 										</div>
 										<!-- Case Item -->
-										<div class="case-item box box__second">
+										<div class="case-item box box__second" data-aos="fade-in" data-aos-delay="400">
 											<img class="case-item__icon" src="assets/img/courses/udemy.png" alt="" />
 											<div>
 												<h3 class="title title--h5"><a href="" class="custom_link">Java
@@ -387,14 +452,11 @@
 								</div>
 							</div>
 
-
-
-
 						</div>
 					</div>
 
 					<!--SKILLS-->
-					<div class="box shadow pb-1 mt-4" id="skills">
+					<div class="box shadow pb-2 mt-4" id="skills">
 						<div class="pb-2">
 							<h1 class="title title--h1 first-title title__separate">Skills</h1>
 						</div>
@@ -502,23 +564,23 @@
 								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4">
 									<h2 class="title title--h3">Tools / Technologies</h2>
 									<div class="d-flex flex-wrap align-content-start">
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="100">
+										<article class="skillArticle" data-aos="fade-in">
 											Object-Oriented Programming</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="200">UML
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="50">UML
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="300">JUnit
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="150">JUnit
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="400">Git
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="200">Git
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="500">Swing
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="250">Swing
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="600">
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="300">
 											WordPress</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="700">Agile
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="350">Agile
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="800">Spring
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="400">Spring
 											Framework</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="900">SCRUM
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="450">SCRUM
 										</article>
 
 									</div>
@@ -526,26 +588,26 @@
 								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4">
 									<h2 class="title title--h3">Soft Skills</h2>
 									<div class="d-flex flex-wrap align-content-start">
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="100">Team Work
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="50">Team Work
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="200">Creativity
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="150">Creativity
 											Skills</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="300">
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="200">
 											Communication</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="400">Critical
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="250">Critical
 											Thinking
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="500">Positive
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="300">Positive
 											Attitude
 										</article>
-										<article class="skillArticle" data-aos="fade-in" data-aos-delay="600">
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="350">
 											Self-Taught
 										</article>
 
 									</div>
 								</div>
 								<!-- LANGUAGES-->
-								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4">
+								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4 pb-2">
 									<h2 class="title title--h3">Languages</h2>
 									<div class="d-flex flex-column">
 
@@ -564,7 +626,7 @@
 					</div>
 
 					<!-- PROJECTS -->
-					<div class="box shadow pb-1 mt-4" id="projects">
+					<div class="box shadow pb-2 mt-4" id="projects">
 
 
 						<div class="pb-2">
@@ -648,59 +710,8 @@
 						</div>
 					</div>
 
-					<!--Hobbies-->
-					<div class="box shadow pb-1 mt-4" id="hobbies">
 
 
-						<div class="pb-2">
-							<h1 class="title title--h1 first-title title__separate">Hobbies</h1>
-						</div>
-
-						<!-- HOBBIES -->
-						<div class=" ">
-					
-							<div class="swiper-container js-carousel-clients">
-								<div class="swiper-wrapper">
-																
-									<!-- Item client -->
-									<div class="swiper-slide d-flex flex-column">
-										<img src="assets/img/hobbies/undraw_healthy_habit_bh5w.svg" alt="Logo" />
-										<h4 class="title title--h5 text-center mt-3">Workout</h4>
-									</div>
-
-									<!-- Item client -->
-									<div class="swiper-slide d-flex flex-column">
-										<img src="assets/img/hobbies/undraw_Code_review_re_woeb.svg" alt="Logo" />
-										<h4 class="title title--h5 text-center mt-3">Learning</h4>
-									</div>
-									
-									<!-- Item client -->
-									<div class="swiper-slide d-flex flex-column">
-										<img src="assets/img/hobbies/undraw_barbecue_3x93.svg" alt="Logo" />
-										<h4 class="title title--h5 text-center mt-3">Cooking</h4>
-									</div>
-
-									<!-- Item client -->
-									<div class="swiper-slide d-flex flex-column">
-										<img src="assets/img/hobbies/undraw_Savings_re_eq4w.svg" alt="Logo" />
-										<h4 class="title title--h5 text-center mt-3">Reading about finance</h4>
-									</div>
-
-
-									<!-- Item client -->
-									<div class="swiper-slide d-flex flex-column">
-										<img src="assets/img/hobbies/undraw_home_cinema_l7yl.svg" alt="Logo" /></a>
-										<h4 class="title title--h5 text-center mt-3">Watching Netflix</h4>
-
-									</div>
-
-
-								</div>
-						
-								<div class="swiper-pagination"></div>
-							</div>
-						</div>
-					</div>
 
 					<!-- Footer -->
 					<footer class="footer">Copyright © Fábio Morais 2021</footer>
@@ -733,16 +744,16 @@
 	<script>
 		window.onload = function () {
 			Particles.
-init
+				init
 				({
 					selector:
 						'.background',
 					maxParticles: 200,
-					color: ["#e63946","#f1faee","#a8dadc","#457b9d","#1d3557"]
-,
+					color: ["#e63946", "#f1faee", "#a8dadc", "#457b9d", "#1d3557"]
+					,
 					connectParticles: false,
 					sizeVariations: 5,
-						responsive: [
+					responsive: [
 						{
 							breakpoint:
 								768
@@ -750,12 +761,6 @@ init
 							options: {
 								maxParticles:
 									200
-								,
-								color:
-									'#48F2E3'
-								,
-								connectParticles:
-									false
 							}
 						}, {
 							breakpoint:
@@ -764,9 +769,7 @@ init
 							options: {
 								maxParticles:
 									100
-								,
-								connectParticles:
-								false
+
 							}
 						}, {
 							breakpoint:

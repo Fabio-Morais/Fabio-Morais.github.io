@@ -1023,7 +1023,9 @@ button:focus {
 /* -----------------------------------------------------------------
     - Sidebar
 ----------------------------------------------------------------- */
-
+.sidebar{
+  z-index: 0!important;
+}
 @media only screen and (max-width: 1200px) {
   .sidebar {
     margin-bottom: 1.875rem;
@@ -1157,6 +1159,10 @@ button:focus {
   color: #002855;
   text-decoration: none;
 }
+.icon_menu{
+  margin-right: 8px!important;
+}
+
 
 .contacts-block__item a:hover {
   color: #0466C8;
@@ -1173,8 +1179,11 @@ button:focus {
 
 .sticky-column.is_stuck .avatar {
   margin-top: 0;
-}
 
+}
+element.style{
+  position: absolute!important;
+}
 /* -----------------------------------------------------------------
     - Sections
 ----------------------------------------------------------------- */
@@ -1308,6 +1317,7 @@ button:focus {
   top: 0;
   width: 1.875rem;
   z-index: -1;
+  
 }
 
 @media only screen and (max-width: 580px) {
@@ -1503,11 +1513,12 @@ button:focus {
 
 .social__link {
   color: #002855;
-  font-size: 1.3rem;
+  font-size: 17px;
   margin-left: 0.8125rem;
   max-height: 30px;
   text-decoration: none;
-}
+  position: relative;
+  z-index: 10!important; /* Was 2 */}
 
 .social__link:hover {
   cursor: pointer;
@@ -1533,7 +1544,7 @@ button:focus {
 .circle-menu {
   background-color: #0466C8;
   border-radius: 50% 1.25rem 50% 50%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 3.75rem;
@@ -1548,15 +1559,11 @@ button:focus {
   min-width: 0;
 }
 
+
+
 @media only screen and (max-width: 991px) {
   .circle-menu {
-    height: 3.5625rem;
-    width: 3.5625rem;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  .circle-menu {
+    display: flex;
     border-radius: 50%;
     margin-top: 1rem;
     margin-right: 1rem;
@@ -1654,8 +1661,13 @@ button:focus {
 
 @media only screen and (max-width: 991px) {
   .inner-menu {
-    height: 3.5625rem;
-    width: 80%;
+    height: 2.5625rem;
+    width: 50%;
+    display: flex;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    position: fixed;
   }
 }
 
@@ -1722,6 +1734,7 @@ button:focus {
 
 .nav__item {
   margin-right: 3rem;
+  text-align: left;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2247,7 +2260,7 @@ button:focus {
   width: 2.5rem;
   margin: auto;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: all;
   position: absolute;
   top: 0;
   right: 0;
@@ -2263,7 +2276,7 @@ button:focus {
   border-radius: 0 0.625rem 0 0;
   font-size: 0.875rem;
   padding-left: 0.8125rem;
-  padding-right: 0.8125rem;
+  padding-right: 4.8125rem;
   padding-bottom: 0.1875rem;
   padding-top: 0.3125rem;
   position: absolute;
@@ -3076,11 +3089,7 @@ button:focus {
   }
 }
 
-@media only screen and (max-width: 580px) {
-  .back-to-top {
-    display: none !important;
-  }
-}
+
 
 .js-lines {
   overflow: hidden;
@@ -3110,7 +3119,17 @@ button:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
-
+@media only screen and (max-width: 992px) {
+  .nav-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .nav-menu ul{
+    display: flex!important;
+    flex-direction: column!important;
+  }
+}
 .nav-menu {
   padding: 0px;
   margin: 0;
@@ -3121,6 +3140,7 @@ button:focus {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 5px;
 }
 
 .nav-menu>ul>li {
@@ -3131,22 +3151,28 @@ button:focus {
 .nav-menu a {
   color: #a8a9b4;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 17px;
   width: 100%;
 }
 
 .nav-menu a i {
-  font-size: 24px;
-  color: #6f7180;
+  font-size: 17px;
+  color: #a8a9b4;
+  width:28px;
+
 }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #002855;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.4s;
 }
 
 .nav-menu a:hover i, .nav-menu .active>a i, .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #002855;
+
 }
 
 .with_margin_left {
@@ -3257,3 +3283,4 @@ input:checked+.slider:before {
   font-weight: 200!important;
   color: #fffffff5;
 }
+

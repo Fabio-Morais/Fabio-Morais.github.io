@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Fábio Morais</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="author" content="ArtTemplate" />
+	<meta name="description" content="vCard" />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="ArtTemplate" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="your url website" />
+	<meta property="og:image" content="assets/images/social.jpg" />
+	<meta property="og:description" content="vCard" />
+	<meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+
+	<!-- Animation on scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+	<canvas class="background"></canvas>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__wrap">
+			<div class="circle-pulse">
+				<div class="circle-pulse__1"></div>
+				<div class="circle-pulse__2"></div>
+			</div>
+			<div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="container gutter-top" style="border:solid red!important;">
+			<div class="row sticky-parent" >
+				<!-- Sidebar -->
+				<aside class="col-12 col-md-12 col-xl-3">
+					<div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+							<g class="avatar__box">
+								<image xlink:href="assets/img/profile.jpeg" height="100%" width="100%"
+									class="avatarImage" />
+							</g>
+						</svg>
+						<div class="text-center">
+							<h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Fábio</span>
+								Morais</h3>
+							<div class="badge badge--light">Software Developer</div>
+
+							<ul class="contacts-block">
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="Address">
+									<i class="font-icon icon-location"></i>Porto, Portugal
+								</li>
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="E-mail">
+									<a href="mailto:fabio-morais@outlook.pt"><i
+											class="font-icon icon-envelope"></i>fabio-morais@outlook.pt</a>
+								</li>
+							</ul>
+							<!--DARK THEME -->
+							<!--<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>-->
+
+							<!-- Social -->
+							<div class="social d-flex flex-wrap justify-content-center">
+								<a class="social__link m-2" href="https://github.com/Fabio-Morais" target="_blank" data-toggle="tooltip" data-placement="top"
+								title="Github"><i
+										class="fab fa-github"></i></a>
+								<a class="social__link m-2" href="https://www.linkedin.com/in/fabi0morais/" target="_blank" data-toggle="tooltip" data-placement="top"
+								title="Linkedin"><i
+										class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+
+						<div class="sidebar__info box-inner box-inner--rounded">
+
+							<!-- MENU HERE-->
+							<nav class="nav-menu" id="top-menu">
+								<ul>
+									<li class="contacts-block__item active"><a href="#about"><i
+												class="bx bx-home"></i>About</a></li>
+									<li class="contacts-block__item"><a href="#resume"><i class="bx bx-user"></i>
+											Resume</a></li>
+									<li class="contacts-block__item"><a href="#skills"><i class="bx bx-user"></i>
+											Skills</a></li>
+									<li class="contacts-block__item"><a href="#projects"><i
+												class="bx bx-file-blank"></i>
+											<span>Projects</span></a></li>
+									<li class="contacts-block__item"><a href="#hobbies"><i
+												class="bx bx-book-content"></i> Hobbies</a></li>
+
+								</ul>
+							</nav><!-- .nav-menu -->
+							<a class="btn" href="resume.pdf" download><i class="font-icon icon-download"></i> Download CV</a>
+						</div>
+					</div>
+				</aside>
+
+				<!-- Content -->
+				<div class="col-12 col-md-12 col-xl-9">
+
+					<!-- about -->
+					<div class="box shadow pb-1" id="about">
+						<!-- About -->
+						<div class="pb-0 pb-sm-2">
+							<h1 class="title title--h1 first-title title__separate">About Me</h1>
+							<p>I'm from Porto, Portugal, studying the Master's degree in Electrical and Computer
+								Engineering in 5th year, major area of Robotics.
+								I'm programming enthusiast, a self-taught and agile person, always trying to learn new
+								things.
+								During these years I took some online courses about new programming languages and
+								machine learning, I also focused on personal projects.
+							</p>
+
+							<p> My main interest areas are software engineering, web developer and computer vision.
+
+							</p>
+
+						</div>
+
+
+					</div>
+
+					<!-- Resume -->
+					<div class="box shadow pb-1 mt-4" id="resume">
+						<div class="pb-3">
+							<h1 class="title title--h1 first-title title__separate">Resume</h1>
+						</div>
+						<div class="pb-3">
+							<!-- Education -->
+							<div class="d-flex flex-column justify-content-center">
+								<div class="p-2">
+									<h2 class="title title--h3"><img class="title-icon"
+											src="assets/icons/icon-education.svg" alt="" /> Education</h2>
+									<div class="timeline">
+										<!-- Item -->
+										<article class="timeline__item" data-aos="fade-up">
+											<div class="d-flex flex-row">
+												<img class="logo-exp" src="assets/img/education/feupLogo.jpg" alt="" />
+												<div class="d-flex flex-column ml-2">
+													<h5 class="title title--h5 timeline__title"><a>Faculty of
+															Engineering of the University of Porto</a>
+													</h5>
+													<div><span class="timeline__period"><i class="far fa-clock"></i>
+															2017 -
+															2021</span></div>
+
+												</div>
+
+											</div>
+											<p class="timeline__description"> Master's degre in Electrical and Computer
+												Engineering, major area of Robotics</p>
+										</article>
+										<!-- Item -->
+										<article class="timeline__item" data-aos="fade-up" data-aos-delay="300">
+											<div class="d-flex flex-row">
+												<img class="logo-exp" src="assets/img/education/isep.png" alt="" />
+												<div class="d-flex flex-column ml-2">
+													<h5 class="title title--h5 timeline__title">Superior Institute of
+														Engineering of Porto
+													</h5>
+													<div><span class="timeline__period"><i class="far fa-clock"></i>
+															2016 -
+															2017</span></div>
+
+												</div>
+											</div>
+											<p class="timeline__description">First year of Electrical and Computer
+												Engineering</p>
+										</article>
+
+									</div>
+								</div>
+
+
+							</div>
+							<!-- Experience -->
+							<div class="d-flex flex-column justify-content-center">
+								<div class="p-2">
+									<h2 class="title title--h3"><img class="title-icon"
+											src="assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+									<div class="timeline">
+										<!-- FEUP -->
+										<article class="timeline__item" data-aos="fade-up">
+											<div class="d-flex flex-row">
+												<img class="logo-exp" src="assets/img/experience/feupLogo.jpg" alt="" />
+												<div class="d-flex flex-column ml-2">
+													<h5 class="title title--h5 timeline__title">Teaching
+														Assistant
+														- Programming 2</h5>
+													<h6 class="title title--h6 timeline__title2">Faculty of Engineering
+														of the
+														University of Porto</h5>
+														<div><span class="timeline__period"><i class="far fa-clock"></i>
+																Fev
+																2021 —
+																Present</span></div>
+												</div>
+											</div>
+											<p class="timeline__description"><b>Languages:</b> C<br>Assist students
+												by helping them in data
+												structures and algorithms using C. <br>
+												<a
+													href=" https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=461227">
+													Course Page</a>
+											</p>
+										</article>
+
+										<!-- ABYSSAL -->
+										<article class="timeline__item" data-aos="fade-up">
+											<div class="d-flex flex-row">
+												<img class="logo-exp" src="assets/img/experience/abyssalLogo.png"
+													alt="" />
+												<div class="d-flex flex-column ml-2">
+													<h5 class="title title--h5 timeline__title"> MSc Thesis -
+														Deep Learning and Computer Vision </h5>
+													<h6 class="title title--h6 timeline__title2">Internship - Abyssal
+														</h5>
+														<div><span class="timeline__period"><i class="far fa-clock"></i>
+																Fev 2021 —
+																Present</span></div>
+												</div>
+											</div>
+											<p class="timeline__description"><b>Languages:</b> C++ and Python<br>The
+												fundamental purpose and expected
+												contributions of this project are to implement a model that:<br>
+											<ul class="with_margin_left">
+												<li>Segments a set of elements of interest in videos of underwater
+													structures;</li>
+												<li>Develops a method to fuse the segmentation with 3D models of
+													these same objects.</li>
+											</ul>
+											</p>
+										</article>
+
+										<!-- THERAPY -->
+										<article class="timeline__item" data-aos="fade-up">
+											<div class="d-flex flex-row">
+												<img class="logo-exp" src="assets/img/experience/therapyLogo.png"
+													alt="" />
+												<div class="d-flex flex-column ml-2">
+													<h5 class="title title--h5 timeline__title"> Front End
+														Developer - Design & Digital Marketing </h5>
+													<h6 class="title title--h6 timeline__title2">Freelancer - Therapy
+														Center
+														</h5>
+														<div><span class="timeline__period"><i class="far fa-clock"></i>
+																Fev 2021 —
+																Present</span></div>
+												</div>
+											</div>
+											<p class="timeline__description"><b>Languages:</b> Wordpress with HTML,
+												CSS and JS<br>In this job I had a lot of
+												responsibility, I made the whole online presence of this clinic.
+												<br>
+												My responsibilities:<br>
+											<ul class="with_margin_left">
+												<li>Buy and manage a domain and web hosting;</li>
+												<li>Managed the google business;</li>
+												<li>Build a website with wordpress;</li>
+												<li>SEO optimization;</li>
+												<li>Manage the social media;</li>
+											</ul>
+											</p>
+										</article>
+
+										<!-- CRITICAL -->
+										<article class="timeline__item" data-aos="fade-up">
+											<div class="d-flex flex-row">
+												<img class="logo-exp" src="assets/img/experience/criticalLogo.png"
+													alt="" />
+												<div class="d-flex flex-column ml-2">
+													<h5 class="title title--h5 timeline__title"> Web Designer
+													</h5>
+													<div><span class="timeline__period"><i class="far fa-clock"></i>
+															2010 —
+															2013</span></div>
+												</div>
+											</div>
+											<p class="timeline__description"><b>Languages:</b> C++<br>This week, my
+												group was tasked with creating a "Smart Controller" prototype that
+												displays the weather forecast and controls the lights and fan.
+											</p>
+										</article>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- COURSES -->
+							<div class="d-flex flex-column justify-content-center mt-4">
+								<div class="p-2">
+									<h2 class="title title--h3"><img class="title-icon" src="assets/icons/medal.svg"
+											alt="" /> Online Courses</h2>
+									<div class="row justify-content-between pt-2">
+										<!-- Case Item -->
+										<div class="case-item box box__second">
+											<img class="case-item__icon" src="assets/img/courses/coursera.png" alt="" />
+											<div>
+												<h3 class="title title--h5"><a href="" class="custom_link">Neural
+														Networks and Deep Learning</a></h3>
+												<span class="timeline__period nomargin"><i class="far fa-clock"></i>
+													2020</span>
+												<p class="case-item__caption">Introduction knowledge to my MSc Thesis.
+												</p>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="case-item box box__second">
+											<img class="case-item__icon" src="assets/img/courses/coursera.png" alt="" />
+											<div>
+												<h3 class="title title--h5"><a href="" class="custom_link">Machine
+														Learning</a>
+												</h3>
+												<span class="timeline__period nomargin"><i class="far fa-clock"></i>
+													2020</span>
+												<p class="case-item__caption">Introduction knowledge to my MSc Thesis.
+												</p>
+											</div>
+										</div>
+
+
+										<!-- Case Item -->
+										<div class="case-item box box__second">
+											<img class="case-item__icon" src="assets/img/courses/google.png" alt="" />
+											<div>
+												<h3 class="title title--h5"><a href="" class="custom_link">Digital
+														Marketing</a></h3>
+												<span class="timeline__period nomargin"><i class="far fa-clock"></i>
+													2019</span>
+												<p class="case-item__caption">Introduction knowledge to my Freelancer
+													job at Therapy Center.</p>
+											</div>
+										</div>
+
+										<!-- Case Item -->
+										<div class="case-item box box__second">
+											<img class="case-item__icon" src="assets/img/courses/udemy.png" alt="" />
+											<div>
+												<h3 class="title title--h5"><a href="" class="custom_link">The Complete
+														Python Course | Learn Python by Doing</a></h3>
+												<span class="timeline__period nomargin"><i class="far fa-clock"></i>
+													2019</span>
+												<p class="case-item__caption">First experience with Python.</p>
+											</div>
+										</div>
+										<!-- Case Item -->
+										<div class="case-item box box__second">
+											<img class="case-item__icon" src="assets/img/courses/udemy.png" alt="" />
+											<div>
+												<h3 class="title title--h5"><a href="" class="custom_link">Java
+														Programming Masterclass for Software Developers</a></h3>
+												<span class="timeline__period nomargin"><i class="far fa-clock"></i>
+													2018</span>
+												<p class="case-item__caption">First experience with Java before learning
+													at college.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+					</div>
+
+					<!--SKILLS-->
+					<div class="box shadow pb-1 mt-4" id="skills">
+						<div class="pb-2">
+							<h1 class="title title--h1 first-title title__separate">Skills</h1>
+						</div>
+						<!-- Skills -->
+						<div class="d-flex flex-column justify-content-center mt-4">
+
+							<div class="row">
+								<!-- WEB DEV SKILLS-->
+								<div class="col-12 col-lg-6 ">
+									<h2 class="title title--h3">Web Dev Skills</h2>
+									<div class="box box__second">
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="80"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>HTML and CSS</span><span
+														class="no_bold">Advanced</span>
+												</div>
+											</div>
+											<div class="progress-text"><span>HTML and CSS</span></div>
+										</div>
+
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="85"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>PHP</span><span
+														class="no_bold">Advanced</span>
+												</div>
+											</div>
+											<div class="progress-text"><span>PHP</span></div>
+										</div>
+
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>Javascript</span><span
+														class="no_bold">Intermediate</span>
+												</div>
+											</div>
+											<div class="progress-text"><span>Javascript</span></div>
+										</div>
+
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>Bootstrap</span><span
+														class="no_bold">Intermediate</span>
+												</div>
+											</div>
+											<div class="progress-text"><span>Bootstrap</span></div>
+										</div>
+									</div>
+								</div>
+								<!-- Software SKILLS-->
+								<div class="col-12 col-lg-6 mt-4 mt-lg-0">
+									<h2 class="title title--h3">Software Skills</h2>
+									<div class="box box__second">
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="95"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>Java</span><span
+														class="no_bold">Expert</span>
+												</div>
+											</div>
+											<div class="progress-text"><span>Java</span></div>
+										</div>
+
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="90"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>C/C++</span><span
+														class="no_bold">Advanced</span>
+												</div>
+											</div>
+											<div class="progress-text"><span>C/C++</span></div>
+										</div>
+
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>Python</span><span
+														class="no_bold">Intermediate</span></div>
+											</div>
+											<div class="progress-text"><span>Python</span></div>
+										</div>
+
+										<!-- Progress -->
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="95"
+												aria-valuemin="0" aria-valuemax="100">
+												<div class="progress-text"><span>PostgreSQL</span><span
+														class="no_bold">Expert</span></div>
+											</div>
+											<div class="progress-text"><span>PostgreSQL</span></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4">
+									<h2 class="title title--h3">Tools / Technologies</h2>
+									<div class="d-flex flex-wrap align-content-start">
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="100">
+											Object-Oriented Programming</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="200">UML
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="300">JUnit
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="400">Git
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="500">Swing
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="600">
+											WordPress</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="700">Agile
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="800">Spring
+											Framework</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="900">SCRUM
+										</article>
+
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4">
+									<h2 class="title title--h3">Soft Skills</h2>
+									<div class="d-flex flex-wrap align-content-start">
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="100">Team Work
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="200">Creativity
+											Skills</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="300">
+											Communication</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="400">Critical
+											Thinking
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="500">Positive
+											Attitude
+										</article>
+										<article class="skillArticle" data-aos="fade-in" data-aos-delay="600">
+											Self-Taught
+										</article>
+
+									</div>
+								</div>
+								<!-- LANGUAGES-->
+								<div class="col-12 col-lg-6 mt-4 mt-lg-0 pt-4">
+									<h2 class="title title--h3">Languages</h2>
+									<div class="d-flex flex-column">
+
+										<div class="d-flex flex-row">
+											<h5 class="title title--h5 languageTitle">English:</h5>
+											<p class="languageText">Professional working proficiency</p>
+										</div>
+										<div class="d-flex">
+											<h5 class="title title--h5 languageTitle">Portuguese:</h5>
+											<p class="languageText">Native</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- PROJECTS -->
+					<div class="box shadow pb-1 mt-4" id="projects">
+
+
+						<div class="pb-2">
+							<h1 class="title title--h1 first-title title__separate">Projects</h1>
+						</div>
+
+						<!-- Gallery -->
+						<div class="pb-0">
+							<!-- Filter -->
+							<div class="select">
+								<span class="placeholder">Select category</span>
+								<ul class="filter">
+									<li class="filter__item">Category</li>
+									<li class="filter__item active" data-filter="*"><a class="filter__link active"
+											href="#filter">All</a></li>
+									<li class="filter__item" data-filter=".category-concept"><a class="filter__link"
+											href="#filter">Software</a></li>
+									<li class="filter__item" data-filter=".category-design"><a class="filter__link"
+											href="#filter">Web</a></li>
+
+								</ul>
+								<input type="hidden" name="changemetoo" />
+							</div>
+
+							<!-- Content -->
+							<div class="gallery-grid js-masonry js-filter-container d-flex flex-wrap">
+								<div class="gutter-sizer"></div>
+								<!-- Item 1 -->
+								<article class="news-item box gallery-grid__item category-design category-concept">
+									<div class="news-item__image-wrap overlay overlay--45">
+										<div class="news-item__date">2021</div>
+										<a class="news-item__link" href=""></a>
+										<img class="cover lazyload" src="assets/img/clock-131964752516628239_512.png"
+											alt="" />
+									</div>
+									<div class="news-item__caption">
+										<h5 class="title title--h5">Coming Soon...</h5>
+										<p> </p>
+									</div>
+								</article>
+
+								<!-- Item 2 -->
+								<!--<article class="news-item box gallery-grid__item category-design">
+									<div class="news-item__image-wrap overlay overlay--45">
+										<div class="news-item__date">Sep 16, 2019</div>
+										<a class="news-item__link" href="single-post.html"></a>
+										<img class="cover lazyload" src="assets/img/picture-1.png" alt="" />
+									</div>
+									<div class="news-item__caption">
+										<h5 class="title title--h5">Design Conferences in 2019</h5>
+										<p>Veritatis </p>
+									</div>
+								</article>-->
+
+								<!-- Item 3 -->
+								<!--<article class="news-item box gallery-grid__item category-design">
+									<div class="news-item__image-wrap overlay overlay--45">
+										<div class="news-item__date">Sep 16, 2019</div>
+										<a class="news-item__link" href="single-post.html"></a>
+										<img class="cover lazyload" src="assets/img/picture-1.png" alt="" />
+									</div>
+									<div class="news-item__caption">
+										<h5 class="title title--h5">Design Conferences in 2019</h5>
+										<p>Veritatis </p>
+									</div>
+								</article>-->
+
+								<!--<article class="news-item box gallery-grid__item category-design">
+									<div class="news-item__image-wrap overlay overlay--45">
+										<div class="news-item__date">Sep 16, 2019</div>
+										<a class="news-item__link" href="single-post.html"></a>
+										<img class="cover lazyload" src="assets/img/picture-1.png" alt="" />
+									</div>
+									<div class="news-item__caption">
+										<h5 class="title title--h5">Design Conferences in 2019</h5>
+										<p>Veritatis </p>
+									</div>
+								</article>-->
+
+							</div>
+						</div>
+					</div>
+
+					<!--Hobbies-->
+					<div class="box shadow pb-1 mt-4" id="hobbies">
+
+
+						<div class="pb-2">
+							<h1 class="title title--h1 first-title title__separate">Hobbies</h1>
+						</div>
+
+						<!-- HOBBIES -->
+						<div class=" ">
+					
+							<div class="swiper-container js-carousel-clients">
+								<div class="swiper-wrapper">
+																
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_healthy_habit_bh5w.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Workout</h4>
+									</div>
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_Code_review_re_woeb.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Learning</h4>
+									</div>
+									
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_barbecue_3x93.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Cooking</h4>
+									</div>
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_Savings_re_eq4w.svg" alt="Logo" />
+										<h4 class="title title--h5 text-center mt-3">Reading about finance</h4>
+									</div>
+
+
+									<!-- Item client -->
+									<div class="swiper-slide d-flex flex-column">
+										<img src="assets/img/hobbies/undraw_home_cinema_l7yl.svg" alt="Logo" /></a>
+										<h4 class="title title--h5 text-center mt-3">Watching Netflix</h4>
+
+									</div>
+
+
+								</div>
+						
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<footer class="footer">Copyright © Fábio Morais 2021</footer>
+				</div>
+			</div>
+	</main>
+
+	<div class="back-to-top"></div>
+
+	<!-- SVG masks -->
+	<svg class="svg-defs">
+		<clipPath id="avatar-box">
+			<path
+				d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z" />
+		</clipPath>
+		<clipPath id="avatar-hexagon">
+			<path
+				d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z" />
+		</clipPath>
+	</svg>
+
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+	<script src="assets/js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="assets/libs/particles/dist/particles.min.js"></script>
+	<!--PARTICLE.JS-->
+	<script>
+		window.onload = function () {
+			Particles.
+init
+				({
+					selector:
+						'.background',
+					maxParticles: 200,
+					color: ["#e63946","#f1faee","#a8dadc","#457b9d","#1d3557"]
+,
+					connectParticles: false,
+					sizeVariations: 5,
+						responsive: [
+						{
+							breakpoint:
+								768
+							,
+							options: {
+								maxParticles:
+									200
+								,
+								color:
+									'#48F2E3'
+								,
+								connectParticles:
+									false
+							}
+						}, {
+							breakpoint:
+								425
+							,
+							options: {
+								maxParticles:
+									100
+								,
+								connectParticles:
+								false
+							}
+						}, {
+							breakpoint:
+								320
+							,
+							options: {
+								maxParticles:
+									0
+
+								// disables particles.js
+							}
+						}
+					]
+				});
+		};
+	</script>
+</body>
+
+</html>

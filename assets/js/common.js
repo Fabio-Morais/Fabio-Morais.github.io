@@ -233,13 +233,13 @@ $(document).ready(function () {
     //  stop sticky kit
     //  based on your window width
 
-    var screen = 790;
-    var screen2 = 1200;
+    var screen = 790;//height
+    var screen2 = 1200;//width
 
     var windowHeight, windowWidth;
+    windowWidth = $(window).width();
     windowHeight = $(window).height();
-    windowWidth = $(window).height();
-    if ((windowHeight < screen || windowWidth < screen2)) {
+    if ((windowWidth < screen2 || windowHeight < screen)) {
         detachStickyKit();
     } else {
         activeStickyKit();

@@ -476,11 +476,11 @@ iframe {
 }
 
 .cover {
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  font-family: 'object-fit: cover; object-position: center;';
-  height: 80%;
-  width: 80%;
+  font-family: 'object-fit: contain; object-position: center;';
+  height: 90%;
+  width: 90%;
   display: block;
   margin: auto;
 
@@ -2276,12 +2276,17 @@ element.style{
   border-radius: 0 0.625rem 0 0;
   font-size: 0.875rem;
   padding-left: 0.8125rem;
-  padding-right: 4.8125rem;
+  padding-right: 1.8125rem;
   padding-bottom: 0.1875rem;
   padding-top: 0.3125rem;
   position: absolute;
   bottom: 0;
   z-index: 2;
+}
+.news-item__language{
+  font-size: 0.775rem;
+  color: #7D8597;
+
 }
 
 .news-item__link {
@@ -2292,7 +2297,7 @@ element.style{
 }
 
 .news-item__caption {
-  padding: 1.875rem 1.875rem 0.5rem;
+  padding: 1.075rem 1.075rem 0.5rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -2323,6 +2328,7 @@ element.style{
 .header-post {
   margin-top: 1rem;
   text-align: center;
+  padding: 0;
 }
 
 @media only screen and (max-width: 580px) {
@@ -2356,12 +2362,17 @@ element.style{
 }
 
 .header-post__image-wrap {
-  height: 31.25rem;
   margin-left: -1.875rem;
   margin-right: -1.875rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0rem;
+  padding: 0 20px;
 }
-
+.header-post__image-wrap .row-2{
+  margin: 0px 15px;
+}
+.row-2{
+  width:400px!important;
+}
 @media only screen and (max-width: 580px) {
   .header-post__image-wrap {
     height: 18rem;
@@ -2374,7 +2385,8 @@ element.style{
 .caption-post {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 0.6rem;
+  margin-top: 1.6rem;
   width: 80%;
 }
 
@@ -2391,6 +2403,9 @@ element.style{
 }
 
 .caption-post p {
+  color: #7D8597;
+}
+.caption-post UL {
   color: #7D8597;
 }
 
@@ -2415,12 +2430,16 @@ element.style{
 .gallery-post__item {
   flex: calc(50% - 32px);
   height: auto;
-  max-height: 80vw;
+  max-height: 15vw;
   margin-left: 1rem;
   margin-right: 1rem;
   width: calc(50% - 32px);
 }
-
+.end_info{
+  text-align: center;
+  margin-bottom: 0px;
+  
+}
 @media only screen and (max-width: 580px) {
   .gallery-post__item {
     flex: 100%;
@@ -2433,9 +2452,9 @@ element.style{
 
 .gallery-post__caption {
   color: #8697A8;
-  font-size: 0.875rem;
-  font-style: italic;
+  font-size: 0.975rem;
   padding: 1rem 1rem 2rem;
+  font-weight: 500;;
   text-align: center;
   width: 100%;
 }
@@ -2456,8 +2475,8 @@ element.style{
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
+  margin-top: 0rem;
+  padding-top: 1.5rem;
   position: relative;
 }
 
@@ -3284,3 +3303,33 @@ input:checked+.slider:before {
   color: #fffffff5;
 }
 
+.embed-container{
+  height: 350px;
+  width: 80%;
+  margin:auto
+}
+
+.custom-bullet li {
+  display: block;
+}
+
+.custom-bullet li:before
+{
+  /*Using a Bootstrap glyphicon as the bullet point*/
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; content: "\f054";  
+  font-size: 10px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #CCCCCC;
+}
+.languages-icons {
+  margin-bottom: 1rem;
+}
+.languages-icons div{
+  width:43px;
+  height:43px;
+  margin: 5px;
+}
+#chart line {stroke: #555555; stroke-width:1; }

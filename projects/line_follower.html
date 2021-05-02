@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Fábio Morais - Line Follower Robot</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="author" content="ArtTemplate" />
+	<meta name="description" content="vCard" />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="ArtTemplate" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="your url website" />
+	<meta property="og:image" content="../assets/images/social.jpg" />
+	<meta property="og:description" content="vCard" />
+	<meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="192x192" href="../assets/images/favicons/mipmap-xxxhdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/mipmap-xhdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="../assets/images/favicons/mipmap-mdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/mipmap-hdpi/ic_launcher.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/web_hi_res_512.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
+
+	<!-- Animation on scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+	<canvas class="background"></canvas>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__wrap">
+			<div class="circle-pulse">
+				<div class="circle-pulse__1"></div>
+				<div class="circle-pulse__2"></div>
+			</div>
+			<div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="container gutter-top">
+			<div class="row sticky-parent">
+				<!-- Sidebar -->
+				<aside class="col-12 col-md-12 col-xl-3">
+					<div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+							<g class="avatar__box">
+								<image xlink:href="../assets/img/profile.jpeg" height="100%" width="100%"
+									class="avatarImage" />
+							</g>
+						</svg>
+						<div class="text-center">
+							<h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Fábio</span>
+								Morais</h3>
+							<div class="badge badge--light">Software Engineer</div>
+
+							<ul class="contacts-block">
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="Address">
+									<i class="font-icon icon-location"></i>Porto, Portugal
+								</li>
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="E-mail">
+									<a href="mailto:fabio-morais@outlook.pt"><i
+											class="font-icon icon-envelope"></i>fabio-morais@outlook.pt</a>
+								</li>
+							</ul>
+							<!--DARK THEME -->
+							<!--<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>-->
+
+							<!-- Social -->
+							<div class="social d-flex flex-wrap justify-content-center">
+								<a class="social__link m-2" href="https://github.com/Fabio-Morais" target="_blank"
+									data-toggle="tooltip" data-placement="top" title="Github"><i
+										class="fab fa-github"></i></a>
+								<a class="social__link m-2" href="https://www.linkedin.com/in/fabi0morais/"
+									target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+										class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+
+						<div class="sidebar__info box-inner box-inner--rounded">
+
+							<!-- MENU HERE-->
+							<nav class="nav-menu" id="top-menu">
+								<ul>
+									<li class="contacts-block__item">
+										<a href="../index.html#about"><i class="far fa-user icon_menu text-center"></i>
+											About</a>
+									</li>
+									<li class="contacts-block__item"><a href="../index.html#resume">
+											<i class="far fa-file icon_menu text-center"></i>
+											Resume</a></li>
+									<li class="contacts-block__item"><a href="../index.html#skills"><i
+												class="fas fa-code icon_menu text-center"></i>
+											Skills</a></li>
+									<li class="contacts-block__item active"><a href="../index.html#projects"><i
+												class="fas fa-code-branch text-center"></i>
+											Projects</a></li>
+								</ul>
+							</nav><!-- .nav-menu -->
+							<a class="btn" href="resume.pdf" download><i class="font-icon icon-download"></i> Download
+								CV</a>
+						</div>
+
+					</div>
+				</aside>
+
+				<!-- Content -->
+				<div class="col-12 col-md-12 col-xl-9">
+					<!-- MOBILE MENU -->
+					<div class="circle-menu">
+						<div class="hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="inner-menu js-menu js-tabs">
+						<ul class="nav">
+							<li class="nav__item">
+								<a href="../index.html#about" class="active"> About</a>
+							</li>
+							<li class="nav__item"><a href="../index.html#resume">
+									Resume</a></li>
+							<li class="nav__item"><a href="../index.html#skills">
+									Skills</a></li>
+							<li class="nav__item"><a href="../index.html#projects">Projects</a></li>
+						</ul>
+					</div>
+					<!-- about -->
+					<div class="box shadow pb-0">
+						<!-- Menu -->
+						<!-- MOBILE MENU -->
+						<div class="circle-menu">
+							<div class="hamburger">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<div class="inner-menu js-menu js-tabs">
+							<ul class="nav">
+								<li class="nav__item">
+									<a href="../index.html#about" class="active"> About</a>
+								</li>
+								<li class="nav__item"><a href="../index.html#resume">
+										Resume</a></li>
+								<li class="nav__item"><a href="../index.html#skills">
+										Skills</a></li>
+								<li class="nav__item"><a href="../index.html#projects">Projects</a></li>
+							</ul>
+						</div>
+
+						<!-- Post -->
+						<div class="pb-3">
+							<header class="header-post">
+								<h1 class="title title--h1 mb-0">Line Follower</h1>
+								<div class="header-post__date">2018</div>
+
+
+								<div class="d-flex languages-icons flex-wrap justify-content-center mb-4">
+									<div><svg viewBox="0 0 128 128">
+										<g><path fill="#659AD3" d="M115.4 30.7l-48.3-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4v-55.7c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1c-4.2 7.4-12.2 12.4-21.3 12.4-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path></g>
+										</svg></div>
+									<div><svg id="chart" width="300" height="225">
+											<line x1="20" y1="15" x2="20" y2="40"></line>
+										</svg></div>
+									<div><svg viewBox="0 0 128 128">
+										<path fill="#fff" d="M21.012 91.125c-5.538.003-10.038-4.503-10.039-10.04l-.002-30.739c-.002-5.532 4.497-10.037 10.028-10.038 2.689-.002 5.207 1.041 7.105 2.937s2.942 4.418 2.944 7.099l-.003 30.74c.007 2.679-1.034 5.199-2.931 7.094-1.892 1.9-4.417 2.946-7.102 2.947M21.004 43.005c-4.053-.002-7.338 3.291-7.339 7.341l.005 30.736c.001 4.064 3.292 7.344 7.341 7.348 4.057-.005 7.343-3.285 7.339-7.347v-30.741c-.002-4.049-3.291-7.339-7.346-7.337"></path><path fill="#fff" d="M99.742 44.527l-2.698-.001-66.119.009-2.699.001-.002-2.699c-.006-11.08 6.03-21.385 15.917-27.473l-3.844-7.017c-.47-.822-.588-1.863-.314-2.815.278-.952.935-1.771 1.814-2.239.509-.288 1.131-.448 1.759-.447 1.362 0 2.609.739 3.267 1.933l4.023 7.329c4.163-1.527 8.558-2.306 13.099-2.305 4.606-.002 9.023.777 13.204 2.311l4.017-7.341c.647-1.191 1.903-1.933 3.263-1.932.612-.001 1.223.148 1.761.438.903.495 1.533 1.286 1.81 2.245.276.953.165 1.959-.318 2.832l-3.842 7.013c9.871 6.101 15.9 16.398 15.899 27.459l.003 2.699zM80.196 15.403l5.123-9.355c.273-.489.095-1.115-.399-1.386-.501-.271-1.119-.086-1.384.405l-5.176 9.45c-4.354-1.934-9.229-3.021-14.382-3.016-5.142-.005-10.008 1.078-14.349 3.005l-5.181-9.429c-.267-.497-.891-.679-1.379-.405-.497.266-.68.891-.403 1.379l5.125 9.348c-10.07 5.194-16.874 15.084-16.868 26.439l66.118-.008c.003-11.351-6.789-21.221-16.845-26.427m-31.256 14.457c-1.521-.003-2.763-1.241-2.763-2.771 0-1.523 1.24-2.774 2.766-2.774 1.533-.001 2.773 1.251 2.775 2.774.001 1.528-1.242 2.77-2.778 2.771m30.107-.006c-1.528.002-2.775-1.235-2.772-2.771 0-1.521 1.242-2.772 2.773-2.778 1.521.005 2.768 1.258 2.767 2.779 0 1.531-1.241 2.771-2.768 2.77M51.711 126.159c-5.533-.001-10.036-4.501-10.037-10.038l-.002-13.567-2.638.003c-2.817.001-5.461-1.094-7.448-3.082-1.99-1.986-3.087-4.633-3.083-7.452l-.01-47.627v-2.701h2.699l65.623-.01 2.7-.002v2.699l.007 47.633c.001 5.809-4.725 10.536-10.532 10.535l-2.654.002.003 13.562c0 5.534-4.502 10.039-10.033 10.039-2.681.006-5.197-1.036-7.098-2.937-1.901-1.896-2.948-4.416-2.947-7.096v-13.568h-4.511v13.565c-.002 5.535-4.503 10.043-10.039 10.042"></path><path fill="#fff" d="M31.205 92.022c-.004 4.337 3.497 7.838 7.831 7.837h5.333l.006 16.264c-.001 4.05 3.289 7.341 7.335 7.342 4.056 0 7.342-3.295 7.338-7.348l.001-16.259 9.909-.003-.001 16.263c.004 4.051 3.298 7.346 7.343 7.338 4.056.003 7.344-3.292 7.343-7.344l-.005-16.259 5.353-.001c4.319.001 7.832-3.508 7.832-7.837l-.009-47.635-65.621.012.012 47.63zM106.996 91.112c-5.536.001-10.039-4.498-10.038-10.036l-.008-30.738c.002-5.537 4.498-10.041 10.031-10.041 5.54-.001 10.046 4.502 10.045 10.038l.003 30.736c.001 5.534-4.498 10.042-10.033 10.041M106.986 42.996c-4.053-.004-7.337 3.287-7.337 7.342l.003 30.737c.002 4.059 3.286 7.343 7.342 7.34 4.054-.001 7.335-3.281 7.338-7.343l-.008-30.736c-.001-4.056-3.283-7.342-7.338-7.34"></path><path fill="#A4C439" d="M21.004 43.005c-4.053-.002-7.338 3.291-7.339 7.341l.005 30.736c.001 4.064 3.288 7.344 7.342 7.343 4.056 0 7.342-3.28 7.338-7.342v-30.741c-.002-4.049-3.291-7.339-7.346-7.337m59.192-27.602l5.123-9.355c.273-.489.094-1.111-.401-1.388-.5-.265-1.117-.085-1.382.407l-5.175 9.453c-4.354-1.938-9.227-3.024-14.383-3.019-5.142-.005-10.013 1.078-14.349 3.005l-5.181-9.429c-.269-.497-.889-.677-1.378-.406-.498.269-.681.892-.404 1.38l5.125 9.349c-10.07 5.193-16.874 15.083-16.868 26.438l66.118-.008c.003-11.351-6.789-21.221-16.845-26.427m-31.256 14.457c-1.521-.003-2.763-1.241-2.763-2.771 0-1.523 1.238-2.775 2.766-2.774 1.533-.001 2.773 1.251 2.775 2.774.001 1.528-1.242 2.77-2.778 2.771m30.107-.006c-1.528.002-2.772-1.237-2.772-2.771.006-1.52 1.242-2.772 2.773-2.778 1.521.005 2.768 1.258 2.767 2.779.002 1.531-1.241 2.771-2.768 2.77m-47.854 14.538l.011 47.635c-.003 4.333 3.502 7.831 7.832 7.831l5.333.002.006 16.264c-.001 4.05 3.291 7.342 7.335 7.342 4.056 0 7.342-3.295 7.343-7.347l-.004-16.26 9.909-.003.004 16.263c0 4.047 3.293 7.346 7.338 7.338 4.056.003 7.344-3.292 7.343-7.344l-.005-16.259 5.352-.004c4.32.002 7.834-3.5 7.836-7.834l-.009-47.635-65.624.011zm83.134 5.943c-.001-4.055-3.286-7.341-7.341-7.339-4.053-.004-7.337 3.287-7.337 7.342l.006 30.738c-.001 4.058 3.283 7.338 7.339 7.339 4.054-.001 7.337-3.281 7.338-7.343l-.005-30.737z"></path>
+										</svg></div>
+									
+
+								</div>
+
+								<div class="header-post__image-wrap">
+									<div class='cover lazyload embed-container'><iframe
+											src='https://www.youtube.com/embed/CKVy9AVmKbY' frameborder='0'
+											allowfullscreen></iframe></div>
+
+								</div>
+
+							</header>
+							<div class="caption-post">
+								<p ><b>Materials:</b> Arduino Uno (ATMEGA 328p), LCD, HC-06 bluetooth, infrared sensors,
+									DC motor, power bank and LEDs</p>
+								<p>The main purpose was to develop and implement a line follower robot that would have to follow
+									the line as fast as possible.</p>
+									<p>For that we projected a microcontroller based system with a user friendly mobile application
+										that can show everything about the robot, active sensors, battery level, track number, track
+										timer, change velocity of the robot, start and stop...etc</p>
+									<ul class="custom-bullet">
+										<li>This robot has 2 modes, automatic mode that follow the line automatically or manual mode, in
+										  this
+										  mode the robot is like a RC car, we can control with a APP.</li>
+										<li>With this project we covered many topics of AVR, like interruptions, USART protocol, PWM, A/D
+										  converter to see the battery status and EPROM to record the track. </li>
+									  </ul>
+							</div>
+
+							<div class="caption-post mt-4">
+								<p class="end_info">For more info please check on Github.</p>
+							</div>
+							<footer class="footer-post">
+								<a class="footer-post__share" target="_blank"
+									href="https://github.com/Fabio-Morais/Line-Follower-Robot"><i
+										class="font-icon icon-github"></i><span>Github</span></a>
+							</footer>
+						</div>
+
+					</div>
+
+
+
+
+					<!-- Footer -->
+					<footer class="footer">Copyright © Fábio Morais 2021</footer>
+				</div>
+			</div>
+	</main>
+
+	<div class="back-to-top"></div>
+
+	<!-- SVG masks -->
+	<svg class="svg-defs">
+		<clipPath id="avatar-box">
+			<path
+				d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z" />
+		</clipPath>
+		<clipPath id="avatar-hexagon">
+			<path
+				d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z" />
+		</clipPath>
+	</svg>
+
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+	<script src="../assets/js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="../assets/libs/particles/dist/particles.min.js"></script>
+	<!--PARTICLE.JS-->
+	<script>
+		window.onload = function () {
+			Particles.
+				init
+				({
+					selector:
+						'.background',
+					maxParticles: 200,
+					color: ["#e63946", "#f1faee", "#a8dadc", "#457b9d", "#1d3557"]
+					,
+					connectParticles: false,
+					sizeVariations: 5,
+					responsive: [
+						{
+							breakpoint:
+								768
+							,
+							options: {
+								maxParticles:
+									200
+							}
+						}, {
+							breakpoint:
+								425
+							,
+							options: {
+								maxParticles:
+									100
+
+							}
+						}, {
+							breakpoint:
+								320
+							,
+							options: {
+								maxParticles:
+									0
+
+								// disables particles.js
+							}
+						}
+					]
+				});
+		};
+	</script>
+</body>
+
+</html>

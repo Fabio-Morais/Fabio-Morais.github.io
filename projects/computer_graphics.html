@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Fábio Morais - Computer Graphics</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="author" content="ArtTemplate" />
+	<meta name="description" content="vCard" />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="ArtTemplate" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="your url website" />
+	<meta property="og:image" content="../assets/images/social.jpg" />
+	<meta property="og:description" content="vCard" />
+	<meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="192x192" href="../assets/images/favicons/mipmap-xxxhdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/mipmap-xhdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="../assets/images/favicons/mipmap-mdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/mipmap-hdpi/ic_launcher.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/web_hi_res_512.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
+
+	<!-- Animation on scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+	<canvas class="background"></canvas>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__wrap">
+			<div class="circle-pulse">
+				<div class="circle-pulse__1"></div>
+				<div class="circle-pulse__2"></div>
+			</div>
+			<div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="container gutter-top">
+			<div class="row sticky-parent">
+				<!-- Sidebar -->
+				<aside class="col-12 col-md-12 col-xl-3">
+					<div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+							<g class="avatar__box">
+								<image xlink:href="../assets/img/profile.jpeg" height="100%" width="100%"
+									class="avatarImage" />
+							</g>
+						</svg>
+						<div class="text-center">
+							<h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Fábio</span>
+								Morais</h3>
+							<div class="badge badge--light">Software Engineer</div>
+
+							<ul class="contacts-block">
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="Address">
+									<i class="font-icon icon-location"></i>Porto, Portugal
+								</li>
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="E-mail">
+									<a href="mailto:fabio-morais@outlook.pt"><i
+											class="font-icon icon-envelope"></i>fabio-morais@outlook.pt</a>
+								</li>
+							</ul>
+							<!--DARK THEME -->
+							<!--<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>-->
+
+							<!-- Social -->
+							<div class="social d-flex flex-wrap justify-content-center">
+								<a class="social__link m-2" href="https://github.com/Fabio-Morais" target="_blank"
+									data-toggle="tooltip" data-placement="top" title="Github"><i
+										class="fab fa-github"></i></a>
+								<a class="social__link m-2" href="https://www.linkedin.com/in/fabi0morais/"
+									target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+										class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+
+						<div class="sidebar__info box-inner box-inner--rounded">
+
+							<!-- MENU HERE-->
+							<nav class="nav-menu" id="top-menu">
+								<ul>
+									<li class="contacts-block__item">
+										<a href="../index.html#about"><i class="far fa-user icon_menu text-center"></i>
+											About</a>
+									</li>
+									<li class="contacts-block__item"><a href="../index.html#resume">
+											<i class="far fa-file icon_menu text-center"></i>
+											Resume</a></li>
+									<li class="contacts-block__item"><a href="../index.html#skills"><i
+												class="fas fa-code icon_menu text-center"></i>
+											Skills</a></li>
+									<li class="contacts-block__item active"><a href="../index.html#projects"><i
+												class="fas fa-code-branch text-center"></i>
+											Projects</a></li>
+								</ul>
+							</nav><!-- .nav-menu -->
+							<a class="btn" href="resume.pdf" download><i class="font-icon icon-download"></i> Download
+								CV</a>
+						</div>
+
+					</div>
+				</aside>
+
+				<!-- Content -->
+				<div class="col-12 col-md-12 col-xl-9">
+					<!-- MOBILE MENU -->
+					<div class="circle-menu">
+						<div class="hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="inner-menu js-menu js-tabs">
+						<ul class="nav">
+							<li class="nav__item">
+								<a href="../index.html#about" class="active"> About</a>
+							</li>
+							<li class="nav__item"><a href="../index.html#resume">
+									Resume</a></li>
+							<li class="nav__item"><a href="../index.html#skills">
+									Skills</a></li>
+							<li class="nav__item"><a href="../index.html#projects">Projects</a></li>
+						</ul>
+					</div>
+					<!-- about -->
+					<div class="box shadow pb-0">
+						<!-- Menu -->
+						<!-- MOBILE MENU -->
+						<div class="circle-menu">
+							<div class="hamburger">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<div class="inner-menu js-menu js-tabs">
+							<ul class="nav">
+								<li class="nav__item">
+									<a href="../index.html#about" class="active"> About</a>
+								</li>
+								<li class="nav__item"><a href="../index.html#resume">
+										Resume</a></li>
+								<li class="nav__item"><a href="../index.html#skills">
+										Skills</a></li>
+								<li class="nav__item"><a href="../index.html#projects">Projects</a></li>
+							</ul>
+						</div>
+
+						<!-- Post -->
+						<div class="pb-3">
+							<header class="header-post">
+								<h1 class="title title--h1 mb-0">Computer Graphics</h1>
+								<div class="header-post__date">2020</div>
+
+
+								<div class="d-flex languages-icons flex-wrap justify-content-center mb-4">
+									<div><svg viewBox="0 0 128 128">
+										<path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185h-125.184z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zm-46.885-37.793h-11.709l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+										</svg></div>
+									
+
+								</div>
+
+								<div class="header-post__image-wrap">
+									<div class='cover lazyload embed-container'><iframe
+											src='https://www.youtube.com/embed/l2On4L7_HyA' frameborder='0'
+											allowfullscreen></iframe></div>
+
+								</div>
+
+							</header>
+							<div class="caption-post">
+
+								<p>A game developed with javascript to improve the knowledge of computer graphics.</p>
+									<p>Contains a user interface to control some features, such as speed, scale, textures and camera view</p>
+									<p><b>Controls:</b></p>
+										<ul id="custom-bullet">
+                      
+											<li>W - Accelarate</li>
+											<li>S - Brake</li>
+											<li>A - Turn left</li>
+											<li>D - Turn right</li>
+											<li>P - Autopilot</li>
+											<li>L - Lauch the package</li>
+											<li>R - Reset scene</li>
+										   
+										  </ul>
+							</div>
+
+							<div class="caption-post mt-4">
+								
+								<p class="end_info">For more info please check on Github or click on the Link for the game.<br>									<a href="https://paginas.fe.up.pt/~up201504257/cgra/proj/" target="_blank">https://paginas.fe.up.pt/~up201504257/cgra/proj/</a></i></p>
+							</p>
+							</div>
+							<footer class="footer-post">
+								<a class="footer-post__share" target="_blank"
+									href="https://github.com/Fabio-Morais/FEUP-CGRA/tree/master/projeto"><i
+										class="font-icon icon-github"></i><span>Github</span></a>
+							</footer>
+						</div>
+
+					</div>
+
+
+
+
+					<!-- Footer -->
+					<footer class="footer">Copyright © Fábio Morais 2021</footer>
+				</div>
+			</div>
+	</main>
+
+	<div class="back-to-top"></div>
+
+	<!-- SVG masks -->
+	<svg class="svg-defs">
+		<clipPath id="avatar-box">
+			<path
+				d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z" />
+		</clipPath>
+		<clipPath id="avatar-hexagon">
+			<path
+				d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z" />
+		</clipPath>
+	</svg>
+
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+	<script src="../assets/js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="../assets/libs/particles/dist/particles.min.js"></script>
+	<!--PARTICLE.JS-->
+	<script>
+		window.onload = function () {
+			Particles.
+				init
+				({
+					selector:
+						'.background',
+					maxParticles: 200,
+					color: ["#e63946", "#f1faee", "#a8dadc", "#457b9d", "#1d3557"]
+					,
+					connectParticles: false,
+					sizeVariations: 5,
+					responsive: [
+						{
+							breakpoint:
+								768
+							,
+							options: {
+								maxParticles:
+									200
+							}
+						}, {
+							breakpoint:
+								425
+							,
+							options: {
+								maxParticles:
+									100
+
+							}
+						}, {
+							breakpoint:
+								320
+							,
+							options: {
+								maxParticles:
+									0
+
+								// disables particles.js
+							}
+						}
+					]
+				});
+		};
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Fábio Morais - License Plate Recognition</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="author" content="ArtTemplate" />
+	<meta name="description" content="vCard" />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="ArtTemplate" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="your url website" />
+	<meta property="og:image" content="../assets/images/social.jpg" />
+	<meta property="og:description" content="vCard" />
+	<meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="192x192" href="../assets/images/favicons/mipmap-xxxhdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/mipmap-xhdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="../assets/images/favicons/mipmap-mdpi/ic_launcher.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/mipmap-hdpi/ic_launcher.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/web_hi_res_512.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
+
+	<!-- Animation on scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+	<canvas class="background"></canvas>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader__wrap">
+			<div class="circle-pulse">
+				<div class="circle-pulse__1"></div>
+				<div class="circle-pulse__2"></div>
+			</div>
+			<div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="container gutter-top">
+			<div class="row sticky-parent">
+				<!-- Sidebar -->
+				<aside class="col-12 col-md-12 col-xl-3">
+					<div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+							<g class="avatar__box">
+								<image xlink:href="../assets/img/profile.jpeg" height="100%" width="100%"
+									class="avatarImage" />
+							</g>
+						</svg>
+						<div class="text-center">
+							<h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Fábio</span>
+								Morais</h3>
+							<div class="badge badge--light">Software Engineer</div>
+
+							<ul class="contacts-block">
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="Address">
+									<i class="font-icon icon-location"></i>Porto, Portugal
+								</li>
+								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="E-mail">
+									<a href="mailto:fabio-morais@outlook.pt"><i
+											class="font-icon icon-envelope"></i>fabio-morais@outlook.pt</a>
+								</li>
+							</ul>
+							<!--DARK THEME -->
+							<!--<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>-->
+
+							<!-- Social -->
+							<div class="social d-flex flex-wrap justify-content-center">
+								<a class="social__link m-2" href="https://github.com/Fabio-Morais" target="_blank"
+									data-toggle="tooltip" data-placement="top" title="Github"><i
+										class="fab fa-github"></i></a>
+								<a class="social__link m-2" href="https://www.linkedin.com/in/fabi0morais/"
+									target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+										class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+
+						<div class="sidebar__info box-inner box-inner--rounded">
+
+							<!-- MENU HERE-->
+							<nav class="nav-menu" id="top-menu">
+								<ul>
+									<li class="contacts-block__item">
+										<a href="../index.html#about"><i class="far fa-user icon_menu text-center"></i>
+											About</a>
+									</li>
+									<li class="contacts-block__item"><a href="../index.html#resume">
+											<i class="far fa-file icon_menu text-center"></i>
+											Resume</a></li>
+									<li class="contacts-block__item"><a href="../index.html#skills"><i
+												class="fas fa-code icon_menu text-center"></i>
+											Skills</a></li>
+									<li class="contacts-block__item active"><a href="../index.html#projects"><i
+												class="fas fa-code-branch text-center"></i>
+											Projects</a></li>
+								</ul>
+							</nav><!-- .nav-menu -->
+							<a class="btn" href="resume.pdf" download><i class="font-icon icon-download"></i> Download
+								CV</a>
+						</div>
+
+					</div>
+				</aside>
+
+				<!-- Content -->
+				<div class="col-12 col-md-12 col-xl-9">
+					<!-- MOBILE MENU -->
+					<div class="circle-menu">
+						<div class="hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+					<div class="inner-menu js-menu js-tabs">
+						<ul class="nav">
+							<li class="nav__item">
+								<a href="../index.html#about" class="active"> About</a>
+							</li>
+							<li class="nav__item"><a href="../index.html#resume">
+									Resume</a></li>
+							<li class="nav__item"><a href="../index.html#skills">
+									Skills</a></li>
+							<li class="nav__item"><a href="../index.html#projects">Projects</a></li>
+						</ul>
+					</div>
+					<!-- about -->
+					<div class="box shadow pb-0">
+						<!-- Menu -->
+						<!-- MOBILE MENU -->
+						<div class="circle-menu">
+							<div class="hamburger">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<div class="inner-menu js-menu js-tabs">
+							<ul class="nav">
+								<li class="nav__item">
+									<a href="../index.html#about" class="active"> About</a>
+								</li>
+								<li class="nav__item"><a href="../index.html#resume">
+										Resume</a></li>
+								<li class="nav__item"><a href="../index.html#skills">
+										Skills</a></li>
+								<li class="nav__item"><a href="../index.html#projects">Projects</a></li>
+							</ul>
+						</div>
+
+						<!-- Post -->
+						<div class="pb-3">
+							<header class="header-post">
+								<h1 class="title title--h1 mb-0">License Plate Recognition</h1>								
+								<div class="header-post__date">2019</div>
+
+
+								<div class="d-flex languages-icons flex-wrap justify-content-center mb-4">
+									<div><svg viewBox="0 0 128 128">
+										<defs> <linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="16.803" y1="16.631" x2="15.013" y2="22.411" gradientTransform="matrix(4,0,0,-4,0,128)"> <stop offset="0" style="stop-color:rgb(33.333333%,6.666667%,13.333333%);stop-opacity:1;"></stop> <stop offset="0.23" style="stop-color:rgb(33.333333%,13.333333%,20%);stop-opacity:1;"></stop> <stop offset="0.36" style="stop-color:rgb(33.333333%,20%,26.666667%);stop-opacity:1;"></stop> <stop offset="0.51" style="stop-color:rgb(40%,26.666667%,33.333333%);stop-opacity:1;"></stop> <stop offset="0.66" style="stop-color:rgb(33.333333%,40%,53.333333%);stop-opacity:1;"></stop> <stop offset="0.84" style="stop-color:rgb(13.333333%,60%,86.666667%);stop-opacity:1;"></stop> </linearGradient> <linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="29.71" y1="18.983" x2="11.71" y2="14.563" gradientTransform="matrix(4,0,0,4,0,0)"> <stop offset="0.081" style="stop-color:rgb(80%,20%,20%);stop-opacity:1;"></stop> <stop offset="0.189" style="stop-color:rgb(87.058824%,32.156863%,22.352941%);stop-opacity:1;"></stop> <stop offset="0.313" style="stop-color:rgb(94.117647%,43.137255%,24.313725%);stop-opacity:1;"></stop> <stop offset="0.421" style="stop-color:rgb(98.039216%,50.196078%,25.882353%);stop-opacity:1;"></stop> <stop offset="0.5" style="stop-color:rgb(99.607843%,52.54902%,26.27451%);stop-opacity:1;"></stop> <stop offset="0.58" style="stop-color:rgb(98.039216%,49.803922%,25.882353%);stop-opacity:1;"></stop> <stop offset="0.696" style="stop-color:rgb(93.72549%,42.352941%,24.313725%);stop-opacity:1;"></stop> <stop offset="0.833" style="stop-color:rgb(86.27451%,29.803922%,21.568627%);stop-opacity:1;"></stop> <stop offset="0.916" style="stop-color:rgb(81.176471%,21.176471%,20%);stop-opacity:1;"></stop> </linearGradient> </defs> <g id="surface1"> <path style=" stroke:none;fill-rule:nonzero;fill:rgb(26.666667%,60%,86.666667%);fill-opacity:1;" d="M 8 70.199219 L 39.878906 57.320312 C 43.117188 53.042969 46.757812 49.089844 50.761719 45.519531 C 53.398438 44.121094 58.359375 44.878906 67.441406 33.601562 C 76.238281 22.601562 79.039062 13.199219 83.160156 13.199219 C 89.679688 13.199219 94.480469 27.28125 101.761719 48.601562 C 106.949219 64.882812 113.039062 80.871094 120 96.480469 C 112.398438 89.398438 105.921875 81.761719 98.519531 81.960938 C 91.640625 82.121094 84 90.28125 75.640625 100.761719 C 69 109.160156 60.199219 114.921875 56.761719 114.800781 C 56.761719 114.800781 47.878906 89.679688 40.441406 85.601562 C 37.308594 84.320312 33.753906 84.617188 30.878906 86.398438 L 8 70.160156 Z M 8 70.199219 "></path> <path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 79.199219 16.078125 C 76.519531 19.679688 73.28125 26.28125 67.441406 33.601562 C 58.359375 44.878906 53.441406 44.121094 50.761719 45.519531 C 46.742188 49.070312 43.09375 53.027344 39.878906 57.320312 L 53.078125 66.960938 C 64.28125 51.679688 70.28125 35.121094 74.960938 24.398438 C 76.132812 21.511719 77.550781 18.726562 79.199219 16.078125 Z M 79.199219 16.078125 "></path> <path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 83.199219 13.199219 C 74.480469 13.199219 68.519531 59.121094 36.320312 84.761719 C 45.359375 83.28125 53.199219 105.71875 56.800781 114.800781 C 72.800781 112.078125 85.601562 81.480469 98.519531 81.960938 C 105.921875 82.238281 112.398438 89.398438 120 96.480469 C 102.640625 60 94.519531 13.199219 83.199219 13.199219 Z M 83.199219 13.199219 "></path> </g>
+										</svg></div>
+
+								</div>
+
+								<div class="header-post__image-wrap">
+									<div class='cover lazyload embed-container'><iframe
+											src='https://www.youtube.com/embed/MLyosk6o_rk' frameborder='0'
+											allowfullscreen></iframe></div>
+							
+								</div>
+
+							</header>
+							<div class="caption-post">
+								<p><b>Development of an algorithm to identify the characters (letters and digits) that form the plate.</b> The algorithm should be applied to the plate images. The performance of the method is to be evaluated via the percentage of well recognized chars in each plate.</p>
+							</div>
+
+							<div class="caption-post mt-4">
+								<p class="end_info">For more info please check on Github.</p>
+							</div>
+							<footer class="footer-post">
+								<a class="footer-post__share" target="_blank" href="https://github.com/Fabio-Morais/FEUP-SBVI/tree/master/Project"><i
+										class="font-icon icon-github"></i><span>Github</span></a>
+							</footer>
+						</div>
+
+					</div>
+
+
+
+
+					<!-- Footer -->
+					<footer class="footer">Copyright © Fábio Morais 2021</footer>
+				</div>
+			</div>
+	</main>
+
+	<div class="back-to-top"></div>
+
+	<!-- SVG masks -->
+	<svg class="svg-defs">
+		<clipPath id="avatar-box">
+			<path
+				d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z" />
+		</clipPath>
+		<clipPath id="avatar-hexagon">
+			<path
+				d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z" />
+		</clipPath>
+	</svg>
+
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+	<script src="../assets/js/common.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<script src="../assets/libs/particles/dist/particles.min.js"></script>
+	<!--PARTICLE.JS-->
+	<script>
+		window.onload = function () {
+			Particles.
+				init
+				({
+					selector:
+						'.background',
+					maxParticles: 200,
+					color: ["#e63946", "#f1faee", "#a8dadc", "#457b9d", "#1d3557"]
+					,
+					connectParticles: false,
+					sizeVariations: 5,
+					responsive: [
+						{
+							breakpoint:
+								768
+							,
+							options: {
+								maxParticles:
+									200
+							}
+						}, {
+							breakpoint:
+								425
+							,
+							options: {
+								maxParticles:
+									100
+
+							}
+						}, {
+							breakpoint:
+								320
+							,
+							options: {
+								maxParticles:
+									0
+
+								// disables particles.js
+							}
+						}
+					]
+				});
+		};
+	</script>
+</body>
+
+</html>

@@ -111,16 +111,18 @@ html.is-scroll-disabled body {
   background-color: #f7f7f7;
 }
 
-.background {
-  background-color: #f7f7f7;
+
+#particles-js{
+  position: fixed;
   width: 100%;
   height: 100%;
-  position: fixed;
+  background-color: #f7f7f7;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
 
 @media only screen and (max-width: 580px) {
   .bg-triangles {

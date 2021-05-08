@@ -41,8 +41,9 @@
 
 <body>
 
-	<canvas class="background"></canvas>
-	<!-- Preloader -->
+	<div id="particles-js"></div>
+
+
 	<div class="preloader">
 		<div class="preloader__wrap">
 			<div class="circle-pulse">
@@ -82,10 +83,11 @@
 								</li>
 							</ul>
 							<!--DARK THEME -->
-							<!--<label class="switch">
+							<h5>Dark Theme</h5>
+							<label class="switch">
 								<input type="checkbox">
 								<span class="slider round"></span>
-							</label>-->
+							</label>
 
 							<!-- Social -->
 							<div class="social d-flex flex-wrap justify-content-center">
@@ -646,10 +648,10 @@
 											href="#filter">Software</a></li>
 									<li class="filter__item" data-filter=".category-embedded"><a class="filter__link"
 											href="#filter">Embedded Systems</a></li>
-											<li class="filter__item" data-filter=".category-web"><a class="filter__link"
-													href="#filter">Web</a></li>
-													<li class="filter__item" data-filter=".category-others"><a class="filter__link"
-															href="#filter">Others</a></li>
+									<li class="filter__item" data-filter=".category-web"><a class="filter__link"
+											href="#filter">Web</a></li>
+									<li class="filter__item" data-filter=".category-others"><a class="filter__link"
+											href="#filter">Others</a></li>
 
 								</ul>
 								<input type="hidden" name="changemetoo" />
@@ -659,30 +661,31 @@
 							<div class="gallery-grid js-masonry js-filter-container d-flex flex-wrap">
 								<div class="gutter-sizer"></div>
 								<!-- WAREHOUSE MANAGER -->
-								<article class="news-item box gallery-grid__item category-software category-web" id="warehouseManager">
+								<article class="news-item box gallery-grid__item category-software category-web"
+									id="warehouseManager">
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2020</div>
 										<a class="news-item__link" href="projects/warehouse_manager.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/warehouse2.PNG"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/warehouse2.PNG" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Warehouse Manager</h5>
 										<p class="news-item__language"> Java | HTML | PHP | Javascript | SQL</p>
 									</div>
 								</article>
-								
+
 								<!-- WAREHOUSE MANAGER -->
-								<article class="news-item box gallery-grid__item category-software category-web" id="warehouseManager">
+								<article class="news-item box gallery-grid__item category-software category-web"
+									id="warehouseManager">
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2020</div>
 										<a class="news-item__link" href="projects/mes.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/mes.PNG"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/mes.PNG" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5" data-toggle="tooltip" data-placement="left"
-										title="Manufacturing Execution System">MES</H6></h5>
+											title="Manufacturing Execution System">MES</H6>
+										</h5>
 										<p class="news-item__language"> Java | HTML | PostgreSQL</p>
 									</div>
 								</article>
@@ -692,8 +695,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2018</div>
 										<a class="news-item__link" href="projects/line_follower.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/followLine.jpg"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/followLine.jpg" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Line Follower Robot</h5>
@@ -706,8 +708,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2020</div>
 										<a class="news-item__link" href="projects/computer_graphics.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/graphic.PNG"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/graphic.PNG" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Computer Graphics</h5>
@@ -720,8 +721,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2017</div>
 										<a class="news-item__link" href="projects/snake_game.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/snake.png"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/snake.png" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Snake Game</h5>
@@ -730,12 +730,12 @@
 								</article>
 
 								<!-- HYDROPONIC GREENHOUSE -->
-								<article class="news-item box gallery-grid__item category-software category-web" id="lineFollower">
+								<article class="news-item box gallery-grid__item category-software category-web"
+									id="lineFollower">
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2019</div>
 										<a class="news-item__link" href="projects/hydroponic_greenhouse.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/hydroponic.PNG"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/hydroponic.PNG" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Hydroponic Greenhouse</h5>
@@ -748,8 +748,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2019</div>
 										<a class="news-item__link" href="projects/production_line.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/plc.PNG"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/plc.PNG" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Production Line Control</h5>
@@ -758,12 +757,12 @@
 								</article>
 
 								<!-- PRODUCTION LINE -->
-								<article class="news-item box gallery-grid__item category-embedded category-software" id="lineFollower">
+								<article class="news-item box gallery-grid__item category-embedded category-software"
+									id="lineFollower">
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2019</div>
 										<a class="news-item__link" href="projects/smart_controller.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/smart.PNG"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/smart.PNG" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Smart Controller</h5>
@@ -776,8 +775,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2019</div>
 										<a class="news-item__link" href="projects/tic_tac_toe.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/tic2.png"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/tic2.png" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Tic Tac Toe</h5>
@@ -790,8 +788,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2019</div>
 										<a class="news-item__link" href="projects/therapy_center.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/website1.png"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/website1.png" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Therapy Center Website</h5>
@@ -804,8 +801,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2020</div>
 										<a class="news-item__link" href="projects/instagram_bot.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/instabot.png"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/instabot.png" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">Instagram Bot</h5>
@@ -818,8 +814,7 @@
 									<div class="news-item__image-wrap overlay overlay--45">
 										<div class="news-item__date"><i class="far fa-clock"></i> 2019</div>
 										<a class="news-item__link" href="projects/license_plate.html"></a>
-										<img class="cover lazyload" src="assets/img/projects/sbvi.jpg"
-											alt="" />
+										<img class="cover lazyload" src="assets/img/projects/sbvi.jpg" alt="" />
 									</div>
 									<div class="news-item__caption">
 										<h5 class="title title--h5">License Plate Recognition</h5>
@@ -861,53 +856,11 @@
 	<script src="assets/js/common.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-	<script src="assets/libs/particles/dist/particles.min.js"></script>
 	<!--PARTICLE.JS-->
-	<script>
-		window.onload = function () {
-			Particles.
-				init
-				({
-					selector:
-						'.background',
-					maxParticles: 200,
-					color: ["#e63946", "#f1faee", "#a8dadc", "#457b9d", "#1d3557"]
-					,
-					connectParticles: false,
-					sizeVariations: 5,
-					responsive: [
-						{
-							breakpoint:
-								768
-							,
-							options: {
-								maxParticles:
-									200
-							}
-						}, {
-							breakpoint:
-								425
-							,
-							options: {
-								maxParticles:
-									100
+	<!-- scripts -->
+<script src="assets/libs/particles2/particles.js"></script>
+<script src="assets/libs/particles2/app.js"></script>
 
-							}
-						}, {
-							breakpoint:
-								320
-							,
-							options: {
-								maxParticles:
-									0
-
-								// disables particles.js
-							}
-						}
-					]
-				});
-		};
-	</script>
 </body>
 
 </html>

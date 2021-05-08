@@ -276,6 +276,7 @@ $(document).ready(function () {
         } else {
             activeStickyKit();
         }
+
     }, 250));
 
 
@@ -603,35 +604,93 @@ $(document).ready(function () {
 /*-----------------------------------------------------------------
   Change Active Menu Item on Page Scroll
 -------------------------------------------------------------------*/
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+console.log(dir)
+//just for the index
+if (dir.length < 2) {
+    // Cache selectors
+    var topMenu = $("#top-menu"),
+        topMenuHeight = topMenu.outerHeight() + 15,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function () {
+            console.log($(this).attr("href"))
 
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+        });
+}
 
-// Cache selectors
-var topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight() + 15,
-    // All list items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function () {
-        var item = $($(this).attr("href"));
-        if (item.length) { return item; }
-    });
 
 $(window).scroll(function () {
-    // Get container scroll position
-    var fromTop = $(this).scrollTop() + topMenuHeight + 300;
-    if ($(this).scrollTop() <= 200)
-        var fromTop = $(this).scrollTop() + topMenuHeight
+    if (dir.length < 2) {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight + 300;
+        if ($(this).scrollTop() <= 200)
+            var fromTop = $(this).scrollTop() + topMenuHeight
 
-    // Get id of current scroll item
-    var cur = scrollItems.map(function () {
-        if ($(this).offset().top < fromTop)
-            return this;
-    });
-    // Get the id of the current element
-    cur = cur[cur.length - 1];
-    var id = cur && cur.length ? cur[0].id : "";
-    // Set/remove active class
-    menuItems
-        .parent().removeClass("active")
-        .end().filter("[href='#" + id + "']").parent().addClass("active");
+        // Get id of current scroll item
+        var cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href='#" + id + "']").parent().addClass("active");
+    }
 });
+
+
+
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {
+    document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+var color = getCookie('color');
+
+console.log(color)
+aux = ""
+if (dir.length > 2) {
+    aux = "../"
+}
+var checkbox = document.querySelector('input[type="checkbox"]');
+if (color == "true") {
+    checkbox.checked = true
+    $('head').append('<link rel="stylesheet" type="text/css" id="black" href="' + aux + 'assets/styles/style-dark.css">');
+}
+
+checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+        console.log('Checked');
+        $('head').append('<link rel="stylesheet" type="text/css" id="black" href="' + aux + 'assets/styles/style-dark.css">');
+    } else {
+        $("#black").remove()
+    }
+    setCookie('color', "" + checkbox.checked, 7);
+});
+setCookie('color', "" + checkbox.checked, 7);

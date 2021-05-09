@@ -448,3 +448,13 @@ a:hover {
   background-color: #eef0f152;
   color: #DEDDE0;
 }
+.caption-post p{
+  color: #DEDDE0!important;
+}
+.caption-post ul{
+  color: #DEDDE0!important;
+}
+
+.footer-post::before {
+  background-color: #DEDDE0!important;
+}

@@ -42,7 +42,7 @@
 
 <body>
 
-	<canvas class="background"></canvas>
+	<div id="particles-js"></div>
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader__wrap">
@@ -83,10 +83,11 @@
 								</li>
 							</ul>
 							<!--DARK THEME -->
-							<!--<label class="switch">
+							<h5 class="d-inline title title--h5">Dark Theme</h5>
+							<label class="switch ">
 								<input type="checkbox">
 								<span class="slider round"></span>
-							</label>-->
+							</label>
 
 							<!-- Social -->
 							<div class="social d-flex flex-wrap justify-content-center">
@@ -245,53 +246,8 @@
 	<script src="../assets/js/common.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-	<script src="../assets/libs/particles/dist/particles.min.js"></script>
-	<!--PARTICLE.JS-->
-	<script>
-		window.onload = function () {
-			Particles.
-				init
-				({
-					selector:
-						'.background',
-					maxParticles: 200,
-					color: ["#e63946", "#f1faee", "#a8dadc", "#457b9d", "#1d3557"]
-					,
-					connectParticles: false,
-					sizeVariations: 5,
-					responsive: [
-						{
-							breakpoint:
-								768
-							,
-							options: {
-								maxParticles:
-									200
-							}
-						}, {
-							breakpoint:
-								425
-							,
-							options: {
-								maxParticles:
-									100
-
-							}
-						}, {
-							breakpoint:
-								320
-							,
-							options: {
-								maxParticles:
-									0
-
-								// disables particles.js
-							}
-						}
-					]
-				});
-		};
-	</script>
+	<script src="../assets/libs/particles2/particles.js"></script>
+<script src="../assets/libs/particles2/app.js"></script>
 </body>
 
 </html>
